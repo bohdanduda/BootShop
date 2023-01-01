@@ -1,0 +1,39 @@
+using Microsoft.AspNetCore.Mvc;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+app.UseRouting();
+app.MapControllerRoute(
+    name: "home",
+    pattern: "/",
+    defaults: new
+    {
+        Controller = "Home",
+        Action = "Index"
+    }
+    );
+
+app.MapControllerRoute(
+    name: "ProductDetail",
+    pattern: "/produkty/{productId}",
+    defaults: new
+    {
+        Controller = "ProductDetail",
+        Action = "ProductDetail",
+    }
+    );
+
+app.Run();
