@@ -21,3 +21,4 @@ C:\Users\dudab\Desktop\SKOLA\VISUALY\$ASP\BootShop\BootShop\obj\Debug\net6.0\ref
 C:\Users\dudab\Desktop\SKOLA\VISUALY\$ASP\BootShop\BootShop\obj\Debug\net6.0\BootShop.pdb
 C:\Users\dudab\Desktop\SKOLA\VISUALY\$ASP\BootShop\BootShop\obj\Debug\net6.0\BootShop.genruntimeconfig.cache
 C:\Users\dudab\Desktop\SKOLA\VISUALY\$ASP\BootShop\BootShop\obj\Debug\net6.0\ref\BootShop.dll
+C:\Users\dudab\Desktop\SKOLA\VISUALY\$ASP\BootShop\BootShop\bin\Debug\net6.0\BootShop.staticwebassets.runtime.json
