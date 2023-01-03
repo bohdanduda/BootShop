@@ -492,7 +492,7 @@
     }
 
     .divider {
-        background: url("images/Group 295.png") no-repeat center;
+        background: url(../images/Group_295.png) no-repeat center;
         display: block;
         height: 37px;
         border: 0;
@@ -901,7 +901,7 @@
     }
 
     .divider {
-        background: url("images/Group 295.png") no-repeat center;
+        background: url('images/Group_295.png') no-repeat center;
         display: block;
         height: 37px;
         border: 0;

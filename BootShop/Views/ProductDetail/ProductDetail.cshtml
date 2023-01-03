@@ -1,6 +1,152 @@
 ﻿@{
     ViewBag.Title = "Detail produktu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h1>Detail produktu</h1>
-<p>@ViewBag.ProductId</p>
-<p></p>
+<link rel="stylesheet" href="css/product_style.css">
+
+<div class="categories-text">
+    <a href="">Domů</a>
+    <span>></span>
+    <a href="">Dívčí boty</a>
+    <span>></span>
+    <a href="">Tenisky</a>
+</div>
+
+<div class="product-container">
+    <div class="product-image-text">
+        <div class="product-images">
+            <img src="images/bota1.png" class="main-product-image" alt="">
+
+            <div class="detail-images">
+                <img src="images/bota2.png" class="left-image" alt="">
+                <img src="images/bota3.png" alt="">
+                <img src="images/bota4.png" alt="">
+            </div>
+        </div>
+        <div class="product-description">
+            <div class="name-and-brand">
+                <p class="product-name">Benjamin Velcro Dark<br>Grey</p>
+                <img src="images/logo.webp" height="40" alt="">
+            </div>
+
+            <p class="product-description-text">
+                Tyhle botky mají styl! Kožené barefoot tenisky vhodné na užší až
+                normální nožku.<br>Vyrobené z kvalitní hladké kůže v kombinaci s textilem. Tenká podešev přesahuje
+                přes<br>prsty,aby byla botka chráněna před poškozením.
+            </p>
+            <hr class="hr-splitter">
+            <div class="color-size-container">
+                <div class="color">
+                    <p class="color-size">Barva</p>
+                    <div class="color-selection">
+                        <div class="color-select color-blue"></div>
+                        <div class="color-select color-black"></div>
+                        <div class="color-select color-red"></div>
+                        <div class="color-select color-blue selected-color"></div>
+                        <div class="color-select color-green"></div>
+                    </div>
+                </div>
+
+                <div class="size">
+                    <p class="color-size">Velikost</p>
+                    <div class="sizes">
+                        <p>21</p>
+                        <div class="out-of-stock"><p>22</p></div>
+                        <p>23</p>
+                        <div class="selected-size"><p>24</p></div>
+                        <p>25</p>
+                        <p>26</p>
+                        <p>27</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-splitter">
+            <p class="in-stock">Skladem</p>
+            <p class="price-before-discount reset-margin">699 Kč</p>
+            <div class="price-button-container">
+                <p class="product-price">529 Kč</p>
+                <button class="add-to-basket-button"><p>Přidat do košíku</p></button>
+            </div>
+        </div>
+    </div>
+    <div class="info-params">
+        <div class="product-info">
+            <p class="info-header">Informace o produktu</p>
+            <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+            </p>
+            <h4 class="reset-margin">Sed quia consequuntur</h4>
+            <p class="reset-margin">
+                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                qui dolorem ipsum quia
+                dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+                et dolore magnam aliquam quaerat voluptatem.
+            </p>
+            <p>
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+                ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+        </div>
+
+        <div class="params-container">
+            <div class="params-header"><p>Parametry produktu</p></div>
+            <div class="product-params">
+                <div class="blue-background"><p class="bold-text">Barva</p></div>
+                <div class="blue-background"><p>Tmavě modrá</p></div>
+                <div><p class="bold-text">Druh</p></div>
+                <div><p>Do deště, turistické</p></div>
+                <div class="blue-background"><p class="bold-text">Materiál</p></div>
+                <div class="blue-background"><p>Guma</p></div>
+                <div><p class="bold-text">Určení</p></div>
+                <div><p>Chlapecké</p></div>
+                <div class="blue-background"><p class="bold-text">Kód</p></div>
+                <div class="blue-background"><p>BG004-001</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="text-container">
+    <p class="redText">Mohlo by se&#160;</p>
+    <p class="blueText">Vám líbit</p>
+</div>
+
+<div class="new-stock">
+    <div class="new-stock-boots">
+        <img src="images/15146773-eb93-11eb-9461-02420a000b04.png" height="280" width="250" alt="">
+        <p class="new-stock-boots-text new-stock-text-margin">Papučky barefoot hnědé <br> kožené</p>
+        <div class="price">
+            <p class="text-price">529 Kč</p>
+            <p class="old-price">699 Kč</p>
+        </div>
+    </div>
+    <div class="new-stock-boots">
+        <img src="images/79ec4063-e3fd-11eb-8d3f-02420a000b23.png" height="280" width="250" alt="">
+        <p class="new-stock-boots-text">Papučky barefoot růžové</p>
+        <div class="price">
+            <p class="text-price">529 Kč</p>
+            <p class="old-price">699 Kč</p>
+        </div>
+    </div>
+    <div class="new-stock-boots">
+        <img src="images/7c895c56-e3fd-11eb-8d3f-02420a000b23.png" height="280" width="250" alt="">
+        <p class="new-stock-boots-text">Sandálky modré umělé</p>
+        <div class="price">
+            <p class="text-price">529 Kč</p>
+            <p class="old-price">699 Kč</p>
+        </div>
+    </div>
+    <div class=new-stock-boots>
+        <img src="images/8291fafa-e3fd-11eb-8d3f-02420a000b23.png" height="280" width="250" alt="">
+        <p class="new-stock-boots-text new-stock-text-margin">Netlačící boty s vysokou <br> špičkou</p>
+        <div class="price">
+            <p class="text-price">529 Kč</p>
+            <p class="old-price">699 Kč</p>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lb5LSwgcEGs2MJP+uE4QSChu9MR8L+y5aWQVi9sgWEw=",
+  "Hash": "A0gXyHhdOa/sNTJXglhM5j8Miyce4IBwOXUb5W3e0W8=",
   "Source": "BootShop",
   "BasePath": "_content/BootShop",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\css\\product_style.css",
+      "SourceId": "BootShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
+      "BasePath": "_content/BootShop",
+      "RelativePath": "css/product_style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\product_style.css"
+    },
     {
       "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\css\\style.css",
       "SourceId": "BootShop",
@@ -321,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\a58593ea-26cb-11ed-842e-02420a000a33.png"
+    },
+    {
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\averageProgrammer.jpg",
+      "SourceId": "BootShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
+      "BasePath": "_content/BootShop",
+      "RelativePath": "images/averageProgrammer.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\averageProgrammer.jpg"
     },
     {
       "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\basket.png",
@@ -680,23 +714,6 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 293.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 295.png",
-      "SourceId": "BootShop",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
-      "BasePath": "_content/BootShop",
-      "RelativePath": "images/Group 295.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Group 295.png"
-    },
-    {
       "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 295.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
@@ -731,12 +748,12 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 4.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 4.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group_295.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
-      "RelativePath": "images/Group 4.svg",
+      "RelativePath": "images/Group_295.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -745,7 +762,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Group 4.svg"
+      "OriginalItemSpec": "wwwroot\\images\\Group_295.png"
+    },
+    {
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group_4.svg",
+      "SourceId": "BootShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
+      "BasePath": "_content/BootShop",
+      "RelativePath": "images/Group_4.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Group_4.svg"
     },
     {
       "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\heart.png",
