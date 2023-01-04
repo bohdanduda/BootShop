@@ -29,7 +29,7 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "ProductDetail",
-    pattern: "/produkty",
+    pattern: "/produkty/{id}",
     defaults: new
     {
         Controller = "ProductDetail",

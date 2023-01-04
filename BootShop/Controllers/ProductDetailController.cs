@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BootShop.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BootShop.Controllers
 {
@@ -6,7 +7,8 @@ namespace BootShop.Controllers
     {
         public IActionResult ProductDetail(string? productId=null)
         {
-            ViewBag.ProductId = productId;
+            ViewBag.ProductVariant = new ProductVariant();
+
             return View();
         }
     }

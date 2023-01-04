@@ -8,19 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dudab\\.nuget\\packages\\": {}
+    "C:\\Users\\dudab\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\BootShop.csproj",
+      "projectUniqueName": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\BootShop.csproj",
       "projectName": "BootShop",
-      "projectPath": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\BootShop.csproj",
+      "projectPath": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\BootShop.csproj",
       "packagesPath": "C:\\Users\\dudab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\obj\\",
+      "outputPath": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\dudab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,8 +56,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -64,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

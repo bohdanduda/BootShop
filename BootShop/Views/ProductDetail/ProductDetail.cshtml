@@ -1,8 +1,9 @@
 ﻿@{
-    ViewBag.Title = "Detail produktu";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<link rel="stylesheet" href="css/product_style.css">
+
+<link rel="stylesheet" href="../css/product_style.css">
+<link rel="stylesheet" href="../css/style.css">
 
 <div class="categories-text">
     <a href="">Domů</a>
@@ -15,25 +16,21 @@
 <div class="product-container">
     <div class="product-image-text">
         <div class="product-images">
-            <img src="images/bota1.png" class="main-product-image" alt="">
+            <img src="../images/bota1.png" class="main-product-image" alt="">
 
             <div class="detail-images">
-                <img src="images/bota2.png" class="left-image" alt="">
-                <img src="images/bota3.png" alt="">
-                <img src="images/bota4.png" alt="">
+                <img src="../images/bota2.png" class="left-image" alt="">
+                <img src="../images/bota3.png" alt="">
+                <img src="../images/bota4.png" alt="">
             </div>
         </div>
         <div class="product-description">
             <div class="name-and-brand">
-                <p class="product-name">Benjamin Velcro Dark<br>Grey</p>
-                <img src="images/logo.webp" height="40" alt="">
+                <p class="product-name">@ViewBag.ProductVariant.GetName()</p>
+                <img src="../images/logo.webp" height="40" alt="">
             </div>
 
-            <p class="product-description-text">
-                Tyhle botky mají styl! Kožené barefoot tenisky vhodné na užší až
-                normální nožku.<br>Vyrobené z kvalitní hladké kůže v kombinaci s textilem. Tenká podešev přesahuje
-                přes<br>prsty,aby byla botka chráněna před poškozením.
-            </p>
+            <p class="product-description-text">@ViewBag.ProductVariant.GetDescription()</p>
             <hr class="hr-splitter">
             <div class="color-size-container">
                 <div class="color">
@@ -61,10 +58,10 @@
                 </div>
             </div>
             <hr class="hr-splitter">
-            <p class="in-stock">Skladem</p>
-            <p class="price-before-discount reset-margin">699 Kč</p>
+            <p class="in-stock">@ViewBag.ProductVariant.GetInStock()</p>
+            <p class="price-before-discount reset-margin">@ViewBag.ProductVariant.GetStockPrice() Kč</p>
             <div class="price-button-container">
-                <p class="product-price">529 Kč</p>
+                <p class="product-price">@ViewBag.ProductVariant.GetDiscountPrice() Kč</p>
                 <button class="add-to-basket-button"><p>Přidat do košíku</p></button>
             </div>
         </div>
@@ -95,15 +92,15 @@
             <div class="params-header"><p>Parametry produktu</p></div>
             <div class="product-params">
                 <div class="blue-background"><p class="bold-text">Barva</p></div>
-                <div class="blue-background"><p>Tmavě modrá</p></div>
+                <div class="blue-background"><p>@ViewBag.ProductVariant.GetColor()</p></div>
                 <div><p class="bold-text">Druh</p></div>
-                <div><p>Do deště, turistické</p></div>
+                <div><p>@ViewBag.ProductVariant.GetType()</p></div>
                 <div class="blue-background"><p class="bold-text">Materiál</p></div>
-                <div class="blue-background"><p>Guma</p></div>
+                <div class="blue-background"><p>@ViewBag.ProductVariant.GetMaterial()</p></div>
                 <div><p class="bold-text">Určení</p></div>
-                <div><p>Chlapecké</p></div>
+                <div><p>@ViewBag.ProductVariant.GetUse()</p></div>
                 <div class="blue-background"><p class="bold-text">Kód</p></div>
-                <div class="blue-background"><p>BG004-001</p></div>
+                <div class="blue-background"><p>@ViewBag.ProductVariant.GetCode()</p></div>
             </div>
         </div>
     </div>
@@ -118,7 +115,7 @@
 
 <div class="new-stock">
     <div class="new-stock-boots">
-        <img src="images/15146773-eb93-11eb-9461-02420a000b04.png" height="280" width="250" alt="">
+        <img src="../images/15146773-eb93-11eb-9461-02420a000b04.png" height="280" width="250" alt="">
         <p class="new-stock-boots-text new-stock-text-margin">Papučky barefoot hnědé <br> kožené</p>
         <div class="price">
             <p class="text-price">529 Kč</p>
@@ -126,7 +123,7 @@
         </div>
     </div>
     <div class="new-stock-boots">
-        <img src="images/79ec4063-e3fd-11eb-8d3f-02420a000b23.png" height="280" width="250" alt="">
+        <img src="../images/79ec4063-e3fd-11eb-8d3f-02420a000b23.png" height="280" width="250" alt="">
         <p class="new-stock-boots-text">Papučky barefoot růžové</p>
         <div class="price">
             <p class="text-price">529 Kč</p>
@@ -134,7 +131,7 @@
         </div>
     </div>
     <div class="new-stock-boots">
-        <img src="images/7c895c56-e3fd-11eb-8d3f-02420a000b23.png" height="280" width="250" alt="">
+        <img src="../images/7c895c56-e3fd-11eb-8d3f-02420a000b23.png" height="280" width="250" alt="">
         <p class="new-stock-boots-text">Sandálky modré umělé</p>
         <div class="price">
             <p class="text-price">529 Kč</p>
@@ -142,7 +139,7 @@
         </div>
     </div>
     <div class=new-stock-boots>
-        <img src="images/8291fafa-e3fd-11eb-8d3f-02420a000b23.png" height="280" width="250" alt="">
+        <img src="../images/8291fafa-e3fd-11eb-8d3f-02420a000b23.png" height="280" width="250" alt="">
         <p class="new-stock-boots-text new-stock-text-margin">Netlačící boty s vysokou <br> špičkou</p>
         <div class="price">
             <p class="text-price">529 Kč</p>
