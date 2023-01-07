@@ -19,13 +19,14 @@
                         <tr>
                             <td>@subcategory.Id</td>
                             <td>@subcategory.Name</td>
-                            <td>@subcategory.CategoryId</td>
+                            <td>@subcategory.Category.Name</td>
                         </tr>
                     }
                 }
             </table>
         </div>
     </div>
+
     <div class="row">
         <div class="col-sm-4">
             <form method="post" class="well">
@@ -38,7 +39,7 @@
                     <select name="categoryId" id="category" class="form-control" required>
                         <option value="">---</option>
                         @{
-                            foreach (var category in ViewBag.Categories)
+                            foreach (Category category in ViewBag.Categories)
                             {
                                 <option value="@category.Id">@category.Name</option>
                             }

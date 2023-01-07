@@ -1,5 +1,6 @@
 ﻿using BootShop.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace BootShop.Controllers.Admin
 {
@@ -9,8 +10,9 @@ namespace BootShop.Controllers.Admin
         [HttpGet]
         public IActionResult Index()
         {
-            ViewBag.Subcategories = this.context.Subcategory;
+            ViewBag.Subcategories = this.context.Subcategory.Include(s => s.Category); // https://learn.microsoft.com/en-us/ef/ef6/querying/related-data 
             ViewBag.Categories = this.context.Category;
+
             return View("/Views/Admin/Subcategory.cshtml");
         }
 
@@ -20,8 +22,8 @@ namespace BootShop.Controllers.Admin
             this.context.Subcategory.Add(subcategory);
             this.context.SaveChanges();
 
+            ViewBag.Subcategories = context.Subcategory.Include(s => s.Category);
             ViewBag.Categories = this.context.Category;
-            ViewBag.Subcategories = context.Subcategory;
 
             return View("/Views/Admin/Subcategory.cshtml");
         }
