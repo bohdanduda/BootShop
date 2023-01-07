@@ -88,6 +88,16 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
+    name: "SubcategoryDelete",
+    pattern: "/admin/subcategory/{id}/delete",
+    defaults: new
+    {
+        Controller = "Subcategory",
+        Action = "Delete"
+    }
+    );
+
+app.MapControllerRoute(
     name: "AdminHome",
     pattern: "/admin",
     defaults: new

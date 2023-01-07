@@ -12,6 +12,7 @@
                     <th>ID</th>
                     <th>Název</th>
                     <th>Kategorie</th>
+                    <th></th>
                 </tr>
                 @{
                     foreach (Subcategory subcategory in ViewBag.Subcategories)
@@ -20,6 +21,7 @@
                             <td>@subcategory.Id</td>
                             <td>@subcategory.Name</td>
                             <td>@subcategory.Category.Name</td>
+                            <td><a href="@Url.RouteUrl("SubcategoryDelete", new {id = subcategory.Id})" class="btn btn-danger">Smazat</a></td>
                         </tr>
                     }
                 }
