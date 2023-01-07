@@ -13,6 +13,7 @@
                     <th>ID</th>
                     <th>Název</th>
                     <th>Podkategorie</th>
+                    <th></th>
                 </tr>
 
                 @foreach (Category category in ViewBag.Categories)
@@ -28,6 +29,7 @@
                                 }
                             </ul>
                         </td>
+                        <td><a href="@Url.RouteUrl("CategoryDelete", new {id = category.Id})" class="btn btn-danger">Smazat</a></td>
                     </tr>
                 }
 

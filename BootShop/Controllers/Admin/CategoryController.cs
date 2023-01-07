@@ -25,5 +25,16 @@ namespace BootShop.Controllers.Admin
 
             return View("/Views/Admin/Category.cshtml");
         }
+
+        [HttpGet]
+        public IActionResult Delete(Category category)
+        {
+            List<Subcategory> subcategories = this.context.Subcategory.Where(s => s.CategoryId == category.Id).ToList();
+            this.context.Subcategory.RemoveRange(subcategories);
+            this.context.Category.Remove(category);
+            this.context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
     }
 }
