@@ -63,7 +63,17 @@ app.MapControllerRoute(
     defaults: new
     {
         Controller = "Color",
-        Action = "Color"
+        Action = "Index"
+    }
+    );
+
+app.MapControllerRoute(
+    name: "ColorDelete",
+    pattern: "/admin/color/{id}/delete",
+    defaults: new
+    {
+        Controller = "Color",
+        Action = "Delete"
     }
     );
 

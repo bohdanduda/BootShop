@@ -5,23 +5,24 @@
 }
 
 <div class="container">
-<h1>Barvy</h1>
-@{
-    foreach (Color color in ViewBag.Colors)
-    {
-        <div style="display:flex; align-items: center;">
-            <div style="background-color: @color.HexCode; border-radius: 50%; width:20px; height:20px; margin-right:10px; border: 1px solid gray;"></div>
-            <p>@color.Id</p>
-            <p>@color.Name</p>
-            <p>@color.HexCode</p>
-        </div>
+    <h1>Barvy</h1>
+    @{
+        foreach (Color color in ViewBag.Colors)
+        {
+            <div style="display:flex; align-content: center;">
+                <div style="background-color: @color.HexCode; border-radius: 50%; width:20px; height:20px; margin-right:10px; border: 1px solid gray;"></div>
+                <p>@color.Id</p>
+                <p>@color.Name</p>
+                <p>@color.HexCode</p>
+                <a href="@Url.RouteUrl("ColorDelete", new {id = color.Id})" class="btn btn-danger">Smazat</a>
+            </div>
+        }
     }
-}
 
-<form method="post">
-    <label>Přidat novou barvu</label>
-    <input name="name" type="text"></input>
-    <input name="hexCode" type="text"></input>
-    <button>Odeslat</button>
-</form>
+    <form method="post">
+        <label>Přidat novou barvu</label>
+        <input name="name" type="text"></input>
+        <input name="hexCode" type="text"></input>
+        <button>Odeslat</button>
+    </form>
 </div>

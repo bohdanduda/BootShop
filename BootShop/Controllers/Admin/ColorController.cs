@@ -9,7 +9,7 @@ namespace BootShop.Controllers.Admin
         private BootShopContext context = new BootShopContext();
 
         [HttpGet]
-        public IActionResult Color()
+        public IActionResult Index()
         {
             ViewBag.Colors = this.context.Color.ToList();
 
@@ -17,13 +17,22 @@ namespace BootShop.Controllers.Admin
         }
 
         [HttpPost]
-        public IActionResult Color(Color color)
+        public IActionResult Index(Color color)
         {
             this.context.Color.Add(color);
             this.context.SaveChanges();
             ViewBag.Colors = this.context.Color.ToList();
 
             return View("/Views/Admin/Color.cshtml");
+        }
+
+        [HttpGet]
+        public IActionResult Delete(Color color)
+        {
+            this.context.Remove(color);
+            this.context.SaveChanges();
+
+            return RedirectToAction("Index");
         }
     }
 }
