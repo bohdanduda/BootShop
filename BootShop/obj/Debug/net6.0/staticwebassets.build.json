@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z4v9y/MRUIQoALTW6yzfN4PcHJHX2sWbwkHgcKRLHDU=",
+  "Hash": "A0gXyHhdOa/sNTJXglhM5j8Miyce4IBwOXUb5W3e0W8=",
   "Source": "BootShop",
   "BasePath": "_content/BootShop",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BootShop\\wwwroot",
       "Source": "BootShop",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\css\\product_style.css",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\css\\product_style.css",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "css/product_style.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\product_style.css"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\css\\style.css",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\01.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\01.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/01.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\images\\01.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\02.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\02.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/02.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\images\\02.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\03-01.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\03-01.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/03-01.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\images\\03-01.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\10e0f753-ec99-11eb-9461-02420a000b04.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\10e0f753-ec99-11eb-9461-02420a000b04.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/10e0f753-ec99-11eb-9461-02420a000b04.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\10e0f753-ec99-11eb-9461-02420a000b04.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\15146773-eb93-11eb-9461-02420a000b04.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\15146773-eb93-11eb-9461-02420a000b04.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/15146773-eb93-11eb-9461-02420a000b04.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\images\\15146773-eb93-11eb-9461-02420a000b04.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\20c2c89d-ae92-11ec-b9bd-02420a000a27.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\20c2c89d-ae92-11ec-b9bd-02420a000a27.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/20c2c89d-ae92-11ec-b9bd-02420a000a27.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\images\\20c2c89d-ae92-11ec-b9bd-02420a000a27.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\2930e14d-da4b-11eb-8d3f-02420a000b23.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\2930e14d-da4b-11eb-8d3f-02420a000b23.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/2930e14d-da4b-11eb-8d3f-02420a000b23.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2930e14d-da4b-11eb-8d3f-02420a000b23.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\6.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\6.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/6.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\6.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\6.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/6.svg",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\6_gray.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\6_gray.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/6_gray.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6_gray.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\79ec4063-e3fd-11eb-8d3f-02420a000b23.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\79ec4063-e3fd-11eb-8d3f-02420a000b23.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/79ec4063-e3fd-11eb-8d3f-02420a000b23.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\images\\79ec4063-e3fd-11eb-8d3f-02420a000b23.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\7c895c56-e3fd-11eb-8d3f-02420a000b23.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\7c895c56-e3fd-11eb-8d3f-02420a000b23.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/7c895c56-e3fd-11eb-8d3f-02420a000b23.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7c895c56-e3fd-11eb-8d3f-02420a000b23.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\8.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\8.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/8.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\8.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\8.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/8.svg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\8291fafa-e3fd-11eb-8d3f-02420a000b23.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\8291fafa-e3fd-11eb-8d3f-02420a000b23.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/8291fafa-e3fd-11eb-8d3f-02420a000b23.png",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\images\\8291fafa-e3fd-11eb-8d3f-02420a000b23.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\a09dbd19-0357-11ec-a9ba-02420a000a40.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\a09dbd19-0357-11ec-a9ba-02420a000a40.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/a09dbd19-0357-11ec-a9ba-02420a000a40.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\images\\a09dbd19-0357-11ec-a9ba-02420a000a40.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\a58593ea-26cb-11ed-842e-02420a000a33.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\a58593ea-26cb-11ed-842e-02420a000a33.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/a58593ea-26cb-11ed-842e-02420a000a33.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\a58593ea-26cb-11ed-842e-02420a000a33.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\averageProgrammer.jpg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\averageProgrammer.jpg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/averageProgrammer.jpg",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\images\\averageProgrammer.jpg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\basket.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\basket.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/basket.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\images\\basket.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\boot_on_wood.jpg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\boot_on_wood.jpg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/boot_on_wood.jpg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\images\\boot_on_wood.jpg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\bota1.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\bota1.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/bota1.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bota1.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\bota2.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\bota2.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/bota2.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bota2.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\bota3.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\bota3.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/bota3.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bota3.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\bota4.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\bota4.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/bota4.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bota4.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\bota5.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\bota5.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/bota5.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bota5.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\facebook.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\facebook.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/facebook.png",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\images\\facebook.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\facebook.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\facebook.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/facebook.svg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\images\\facebook.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 153.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 153.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 153.png",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 153.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 153.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 153.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 153.svg",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 153.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 169.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 169.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 169.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 169.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 169.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 169.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 169.svg",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 169.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 171.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 171.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 171.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 171.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 171.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 171.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 171.svg",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 171.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 195.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 195.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 195.png",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 195.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 195.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 195.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 195.svg",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 195.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 196.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 196.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 196.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 196.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 196.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 196.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 196.svg",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 196.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 293.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 293.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 293.png",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 293.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 293.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 293.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 293.svg",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 293.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 295.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 295.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 295.svg",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 295.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group 4.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group 4.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group 4.png",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group 4.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group_295.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group_295.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group_295.png",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group_295.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\Group_4.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\Group_4.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/Group_4.svg",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Group_4.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\heart.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\heart.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/heart.png",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\images\\heart.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\heart.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\heart.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/heart.svg",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\images\\heart.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\key.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\key.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/key.png",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\images\\key.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\key.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\key.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/key.svg",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\images\\key.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\legs.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\legs.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/legs.png",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\images\\legs.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\loupe.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\loupe.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/loupe.png",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\images\\loupe.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\loupe.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\loupe.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/loupe.svg",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\images\\loupe.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\newsletter_pc_resolution.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\newsletter_pc_resolution.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/newsletter_pc_resolution.png",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\images\\newsletter_pc_resolution.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\profile-user.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\profile-user.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/profile-user.png",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profile-user.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\profile-user.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\profile-user.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/profile-user.svg",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profile-user.svg"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\twitter.png",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\twitter.png",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/twitter.png",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\images\\twitter.png"
     },
     {
-      "Identity": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\images\\twitter.svg",
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\twitter.svg",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\OneDrive\\Plocha\\ČTVRŤÁK\\PROGRAMOVANI\\BootShop\\BootShop\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
       "BasePath": "_content/BootShop",
       "RelativePath": "images/twitter.svg",
       "AssetKind": "All",

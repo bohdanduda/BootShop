@@ -2,50 +2,76 @@
 {
     public class ProductVariant
     {
-        public string Name = "Benjamin Velcro Dark Grey";
+        private int id;
 
-        public string Description = "Tyhle botky mají styl! Kožené barefoot tenisky vhodné na užší až normální nožku Vyrobené z kvalitní hladké kůže v kombinaci s textilem. Tenká podešev přesahuje přesprsty, aby byla botka chráněna před poškozením.";
+        private string name;
 
-        public int DiscountPrice = 569;
+        private string description;
 
-        public int StockPrice = 699;
+        private int discountPrice;
 
-        public bool InStock = true;
+        private int stockPrice;
 
-        public string ProductColor = "Tmavě modrá";
+        private bool inStock;
 
-        public string ProductType = "Do deště, turistické";
+        private string productColor;
 
-        public string ProductMaterial = "Guma";
+        private string productType;
 
-        public string ProductUse = "Chlapecké";
+        private string productMaterial;
 
-        public string ProductCode = "BG004-001";
+        private string productUse;
 
+        private string productCode;
 
+        private string mainPhotoPath;
+
+        private string detailPhotoPath;
+
+        public ProductVariant(int id, string name, string description, int discountPrice, int stockPrice, bool inStock, string productColor, string productType, string productMaterial, string productUse, string productCode, string mainPhotoPath, string detailPhotoPath)
+        {
+            this.id = id;
+            this.name = name;
+            this.description = description;
+            this.discountPrice = discountPrice;
+            this.stockPrice = stockPrice;
+            this.inStock = inStock;
+            this.productColor = productColor;
+            this.productType = productType;
+            this.productMaterial = productMaterial;
+            this.productUse = productUse;
+            this.productCode = productCode;
+            this.mainPhotoPath = mainPhotoPath;
+            this.detailPhotoPath = detailPhotoPath;
+        }
+
+        public int GetId()
+        {
+            return this.id;
+        }
         public string GetName()
         {
-            return this.Name;
+            return this.name;
         }
 
         public string GetDescription()
         {
-            return this.Description;
+            return this.description;
         }
 
         public int GetDiscountPrice()
         {
-            return this.DiscountPrice;
+            return this.discountPrice;
         }
 
         public int GetStockPrice()
         {
-            return this.StockPrice;
+            return this.stockPrice;
         }
 
         public string GetInStock()
         {
-            if (this.InStock)
+            if (this.inStock)
             {
                 return "Skladem";
             }
@@ -57,32 +83,37 @@
 
         public string GetColor()
         {
-            return this.ProductColor;
+            return this.productColor;
         }
 
         public string GetType()
         {
-            return this.ProductType;
+            return this.productType;
         }
 
         public string GetMaterial()
         {
-            return this.ProductMaterial;
+            return this.productMaterial;
         }
 
         public string GetUse()
         {
-            return this.ProductUse;
+            return this.productUse;
         }
 
         public string GetCode()
         {
-            return this.ProductCode;
+            return this.productCode;
+        }
+        
+        public string GetMainPhotoPath()
+        {
+            return this.mainPhotoPath;
         }
 
-
-
-
-
+        public string GetDetailPhotoPath()
+        {
+            return this.detailPhotoPath;
+        }
     }
 }
