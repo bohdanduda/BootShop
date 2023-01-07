@@ -6,17 +6,11 @@ namespace BootShop.Controllers.Admin
 {
     public class ColorController : Controller
     {
+        private BootShopContext context = new BootShopContext();
         public IActionResult Color()
         {
-            Collection<Color> colors = new Collection<Color>();
+            ViewBag.Colors = this.context.Color.ToList();
 
-            colors.Add(new Color(1, "Červená", "#FF0000"));
-            colors.Add(new Color(2, "Modrá", "#0000FF"));
-            colors.Add(new Color(3, "Zelená", "#00FF00"));
-            colors.Add(new Color(4, "Černá", "#000000"));
-            colors.Add(new Color(3, "Bílá", "#FFFFFF"));
-
-            ViewBag.Colors = colors;
             return View("/Views/Admin/Color.cshtml");
         }
     }

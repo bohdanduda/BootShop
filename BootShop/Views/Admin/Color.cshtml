@@ -2,11 +2,11 @@
 @{
     foreach (var color in ViewBag.Colors)
     {
-    <div style="display:flex; align-items: center;">
-                                    <div style="background-color: @color.GetHexCode(); border-radius: 50%; width:20px; height:20px; margin-right:10px; border: 1px solid gray;"></div>
-                                    <p>@color.GetId()</p>
-                                    <p>@color.GetName()</p>
-                                    <p>@color.GetHexCode()</p>
-    </div>
+        <div style="display:flex; align-items: center;">
+            <div style="background-color: @color.HexCode; border-radius: 50%; width:20px; height:20px; margin-right:10px; border: 1px solid gray;"></div>
+            <p>@color.Id</p>
+            <p>@color.Name</p>
+            <p>@color.HexCode</p>
+        </div>
     }
 }

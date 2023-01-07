@@ -1,17 +1,11 @@
-﻿namespace BootShop.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BootShop.Models
 {
+    [Table("size")]
     public class Size
     {
-        private int id;
-
-        public Size(int id)
-        {
-            this.id = id;
-        }
-
-        public int GetSizeId()
-        {
-            return this.id;
-        }
+        [Column("id")]
+        public int Id { get; set; }
     }
 }

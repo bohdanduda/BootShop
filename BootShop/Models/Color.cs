@@ -1,31 +1,18 @@
-﻿namespace BootShop.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BootShop.Models
 {
+    [Table("color")]
     public class Color
     {
-        private int id;
-        private string name;
-        private string hexCode;
+        [Column("id")]
+        public int Id { get; set; }
 
-        public Color( int id, string name, string hexCode)
-        {
-            this.id = id;
-            this.name = name;
-            this.hexCode = hexCode;
-        }
+        [Column("name")]
+        public string Name { get; set; }
 
-        public int GetId()
-        {
-            return id;
-        }
-
-        public string GetName()
-        {
-            return name;
-        }
-
-        public string GetHexCode()
-        {
-            return this.hexCode;
-        }
+        [Column("hex_code")]
+        public string HexCode { get; set; }
     }
 }
+
