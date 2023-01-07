@@ -68,6 +68,16 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
+    name: "Subcategory",
+    pattern: "/admin/subcategory",
+    defaults: new
+    {
+        Controller = "Subcategory",
+        Action = "Index"
+    }
+    );
+
+app.MapControllerRoute(
     name: "AdminHome",
     pattern: "/admin",
     defaults: new

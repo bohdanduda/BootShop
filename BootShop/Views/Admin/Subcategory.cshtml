@@ -1,0 +1,26 @@
+﻿<h1>Podkategorie</h1>
+
+<ul>
+
+    @{
+        foreach (var subcategory in ViewBag.Subcategories)
+        {
+            <li>Id: @subcategory.Id, Jméno: @subcategory.Name, Id kategorie: @subcategory.CategoryId</li>
+        }
+    }
+</ul>
+
+<form method="post">
+    <label>Přidat novou podkategorii</label>
+    <input name="name" type="text"></input>
+    <select name="categoryId" required>
+        <option value="">-- vyber kategorii --</option>
+        @{
+            foreach (var category in ViewBag.Categories)
+            {
+                <option value="@category.Id">@category.Name</option>
+            }
+        }
+    </select>
+    <button>odeslat</button>
+</form>
