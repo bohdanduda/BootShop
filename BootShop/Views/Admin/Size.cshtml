@@ -1,6 +1,12 @@
-﻿<h1>Lorem</h1>
+﻿<h1>Velikosti</h1>
 
 @foreach (var size in ViewBag.Sizes)
 {
-   <p>@size.Id</p>
+    <p>@size.Id</p>
 }
+
+<form method="post">
+    <label>Přidat novou velikost</label>
+    <input name="id" type="number"></input>
+    <button>Odeslat</button>
+</form>
