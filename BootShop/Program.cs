@@ -58,6 +58,16 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
+    name: "Category",
+    pattern: "/admin/category",
+    defaults: new
+    {
+        Controller = "Category",
+        Action = "Index"
+    }
+    );
+
+app.MapControllerRoute(
     name: "AdminHome",
     pattern: "/admin",
     defaults: new
@@ -66,6 +76,4 @@ app.MapControllerRoute(
         Action = "AdminHome"
     }
     );
-
-
 app.Run();

@@ -2,8 +2,8 @@
 
 namespace BootShop.Models
 {
-    [Table("color")]
-    public class Color
+    [Table("category")]
+    public class Category
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("id")]
@@ -11,9 +11,5 @@ namespace BootShop.Models
 
         [Column("name")]
         public string Name { get; set; }
-
-        [Column("hex_code")]
-        public string HexCode { get; set; }
     }
 }
-

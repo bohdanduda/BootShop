@@ -1,0 +1,12 @@
+﻿<h1>Kategorie</h1>
+
+@foreach (var category in ViewBag.Categories)
+{
+    <p>@category.Id: @category.Name</p>
+}
+
+<form method="post">
+    <label>Přidat novou kategorii</label>
+    <input name="name" type="text"></input>
+    <button>Odeslat</button>
+</form>
