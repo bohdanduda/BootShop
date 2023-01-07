@@ -1,12 +1,14 @@
-﻿@{
+﻿@using BootShop.Models;
+
+@{
     Layout = "/Views/Admin/Shared/_Layout.cshtml";
 }
 <div class="container">
 <h1>Velikosti</h1>
 
-@foreach (var size in ViewBag.Sizes)
+@foreach (Size size in ViewBag.Sizes)
 {
-    <p>@size.Id</p>
+        <div>@size.Id <a href="@Url.RouteUrl("SizeDelete", new {id = size.Id})" class="btn btn-danger">Smazat</a></div>
 }
 
 <form method="post">

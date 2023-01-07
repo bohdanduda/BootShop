@@ -8,7 +8,7 @@ namespace BootShop.Controllers.Admin
         private BootShopContext context = new BootShopContext();
 
         [HttpGet]
-        public IActionResult Size()
+        public IActionResult Index()
         {
             ViewBag.Sizes = this.context.Size.ToList();
 
@@ -16,13 +16,22 @@ namespace BootShop.Controllers.Admin
         }
 
         [HttpPost]
-        public IActionResult Size(Size size)
+        public IActionResult Index(Size size)
         {
             this.context.Size.Add(size);
             this.context.SaveChanges();
             ViewBag.Sizes = this.context.Size.ToList();
 
             return View("/Views/Admin/Size.cshtml");
+        }
+
+        [HttpGet]
+        public IActionResult Delete(Size size)
+        {
+            this.context.Size.Remove(size);
+            this.context.SaveChanges();
+
+            return RedirectToAction("Index");
         }
     }
 }

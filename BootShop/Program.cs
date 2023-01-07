@@ -43,7 +43,17 @@ app.MapControllerRoute(
     defaults: new
     {
         Controller = "Size",
-        Action = "Size"
+        Action = "Index"
+    }
+    );
+
+app.MapControllerRoute(
+    name: "SizeDelete",
+    pattern: "/admin/size/{id}/delete",
+    defaults: new
+    {
+        Controller = "Size",
+        Action = "Delete"
     }
     );
 
