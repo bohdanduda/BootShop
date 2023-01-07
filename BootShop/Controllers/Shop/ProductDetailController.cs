@@ -1,11 +1,11 @@
 ﻿using BootShop.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BootShop.Controllers
+namespace BootShop.Controllers.Shop
 {
     public class ProductDetailController : Controller
     {
-        public IActionResult ProductDetail(string? productId=null)
+        public IActionResult ProductDetail(string? productId = null)
         {
             ViewBag.ProductVariant = new ProductVariant(
                 1,

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.ObjectModel;
 
-namespace BootShop.Controllers
+namespace BootShop.Controllers.Admin
 {
     public class SizeController : Controller
     {

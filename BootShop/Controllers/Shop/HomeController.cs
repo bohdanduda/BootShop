@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.ObjectModel;
 
-namespace BootShop.Controllers
+namespace BootShop.Controllers.Shop
 {
     public class HomeController : Controller
     {
@@ -23,7 +23,7 @@ namespace BootShop.Controllers
                 "BG004-001",
                 "bota1.png",
                 "bota2.png"));
-            
+
             productVariants.Add(new ProductVariant(
                 2,
                 "Benjamin Velcro Dark Grey",

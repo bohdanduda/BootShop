@@ -47,4 +47,15 @@ app.MapControllerRoute(
     }
     );
 
+app.MapControllerRoute(
+    name: "Color",
+    pattern: "/admin/color",
+    defaults: new
+    {
+        Controller = "Color",
+        Action = "Color"
+    }
+    );
+
+
 app.Run();

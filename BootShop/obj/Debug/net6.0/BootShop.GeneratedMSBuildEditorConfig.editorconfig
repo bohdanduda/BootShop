@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\dudab\Desktop\SKOLA\VISUALY\$ASP\BootShop\BootShop
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/Color.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29sb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/Size.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2l6ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
