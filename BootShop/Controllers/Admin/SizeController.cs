@@ -24,7 +24,5 @@ namespace BootShop.Controllers.Admin
 
             return View("/Views/Admin/Size.cshtml");
         }
-
-
     }
 }
