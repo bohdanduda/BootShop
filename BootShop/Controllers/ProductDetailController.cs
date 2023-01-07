@@ -22,7 +22,7 @@ namespace BootShop.Controllers
                 "bota1.png",
                 "bota2.png");
 
-            return View();
+            return View("/Views/Shop/ProductDetail.cshtml");
         }
     }
 }

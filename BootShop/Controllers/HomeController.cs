@@ -132,7 +132,7 @@ namespace BootShop.Controllers
 
             ViewBag.ProductVariantCollection = productVariants;
 
-            return View();
+            return View("/Views/Shop/Index.cshtml");
         }
     }
 }

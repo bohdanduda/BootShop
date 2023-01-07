@@ -37,4 +37,14 @@ app.MapControllerRoute(
     }
     );
 
+app.MapControllerRoute(
+    name: "Size",
+    pattern: "/admin/size",
+    defaults: new
+    {
+        Controller = "Size",
+        Action = "Size"
+    }
+    );
+
 app.Run();
