@@ -57,5 +57,15 @@ app.MapControllerRoute(
     }
     );
 
+app.MapControllerRoute(
+    name: "AdminHome",
+    pattern: "/admin",
+    defaults: new
+    {
+        Controller = "AdminHome",
+        Action = "AdminHome"
+    }
+    );
+
 
 app.Run();
