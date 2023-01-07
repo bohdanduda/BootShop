@@ -1,4 +1,9 @@
-﻿<h1>Kategorie</h1>
+﻿@{
+    Layout = "/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+<h1>Kategorie</h1>
 
 @foreach (var category in ViewBag.Categories)
 {
@@ -10,3 +15,4 @@
     <input name="name" type="text"></input>
     <button>Odeslat</button>
 </form>
+</div>

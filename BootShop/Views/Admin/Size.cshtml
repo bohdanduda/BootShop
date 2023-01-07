@@ -1,4 +1,8 @@
-﻿<h1>Velikosti</h1>
+﻿@{
+    Layout = "/Views/Admin/Shared/_Layout.cshtml";
+}
+<div class="container">
+<h1>Velikosti</h1>
 
 @foreach (var size in ViewBag.Sizes)
 {
@@ -10,3 +14,5 @@
     <input name="id" type="number"></input>
     <button>Odeslat</button>
 </form>
+
+</div>

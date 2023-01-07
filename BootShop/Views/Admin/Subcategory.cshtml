@@ -1,26 +1,53 @@
-﻿<h1>Podkategorie</h1>
+﻿@using BootShop.Models;
 
-<ul>
+@{
+    Layout = "/Views/Admin/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Podkategorie</h1>
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>ID</th>
+                    <th>Název</th>
+                    <th>Kategorie</th>
+                </tr>
+                @{
+                    foreach (Subcategory subcategory in ViewBag.Subcategories)
+                    {
+                        <tr>
+                            <td>@subcategory.Id</td>
+                            <td>@subcategory.Name</td>
+                            <td>@subcategory.CategoryId</td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <form method="post" class="well">
+                <div class="form-group">
+                    <label for="name">Název</label>
+                    <input name="name" id="name" type="text" class="form-control" placeholder="Zadejte název" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="category">Kategorie</label>
+                    <select name="categoryId" id="category" class="form-control" required>
+                        <option value="">---</option>
+                        @{
+                            foreach (var category in ViewBag.Categories)
+                            {
+                                <option value="@category.Id">@category.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Přidat podkategorii</button>
+            </form>
 
-    @{
-        foreach (var subcategory in ViewBag.Subcategories)
-        {
-            <li>Id: @subcategory.Id, Jméno: @subcategory.Name, Id kategorie: @subcategory.CategoryId</li>
-        }
-    }
-</ul>
-
-<form method="post">
-    <label>Přidat novou podkategorii</label>
-    <input name="name" type="text"></input>
-    <select name="categoryId" required>
-        <option value="">-- vyber kategorii --</option>
-        @{
-            foreach (var category in ViewBag.Categories)
-            {
-                <option value="@category.Id">@category.Name</option>
-            }
-        }
-    </select>
-    <button>odeslat</button>
-</form>
+        </div>
+    </div>
+</div>

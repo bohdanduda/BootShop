@@ -1,6 +1,13 @@
-﻿<h1>Barvy</h1>
+﻿@using BootShop.Models;
+
 @{
-    foreach (var color in ViewBag.Colors)
+    Layout = "/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+<h1>Barvy</h1>
+@{
+    foreach (Color color in ViewBag.Colors)
     {
         <div style="display:flex; align-items: center;">
             <div style="background-color: @color.HexCode; border-radius: 50%; width:20px; height:20px; margin-right:10px; border: 1px solid gray;"></div>
@@ -17,3 +24,4 @@
     <input name="hexCode" type="text"></input>
     <button>Odeslat</button>
 </form>
+</div>
