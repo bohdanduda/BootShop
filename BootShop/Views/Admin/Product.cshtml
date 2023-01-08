@@ -1,0 +1,140 @@
+﻿@using BootShop.Models;
+
+@{
+    Layout = "/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Produkty</h1>
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>ID</th>
+                    <th>Název</th>
+                    <th>Značka</th>
+                    <th>Kategorie</th>
+                    <th>Podkategorie</th>
+                    <th>Souhrn</th>
+                    <th>Popis</th>
+                    <th>Určení</th>
+                    <th>Druh</th>
+                    <th>Materiál</th>
+                    <th>Kód</th>
+                    <th></th>
+                </tr>
+                @{
+                    foreach (Product product in ViewBag.Products)
+                    {
+                        <tr>
+                            <td>@product.Id</td>
+                            <td>@product.Name</td>
+                            <td>@product.Brand.Name</td>
+                            <td>@product.Category.Name</td>
+                            <td>@(product.Subcategory == null ? "" : @product.Subcategory.Name)</td>
+                            <td>@product.Summary</td>
+                            <td>@product.Description</td>
+                            <td>@product.Purpose</td>
+                            <td>@product.Type</td>
+                            <td>@product.Material</td>
+                            <td>@product.Code</td>
+
+
+                            <td class="text-nowrap">
+                                <a href="@Url.RouteUrl("SubcategoryDelete", new {id = product.Id})" class="btn btn-danger">Smazat</a>
+                                <a href="@Url.RouteUrl("SubcategoryEdit", new {id = product.Id})" class="btn btn-primary">Upravit</a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <form method="post" class="well">
+                <div class="form-group">
+                    <label for="name">Název</label>
+                    <input name="name" id="name" type="text" class="form-control" placeholder="Zadejte název" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="brand">Značka</label>
+                    <select name="brandId" id="brand" class="form-control" required>
+                        <option value="">---</option>
+                        @{
+                            foreach (Brand brand in ViewBag.Brands)
+                            {
+                                <option value="@brand.Id">@brand.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Kategorie</label>
+                    <select name="categoryId" id="category" class="form-control" required>
+                        <option value="">---</option>
+                        @{
+                            foreach (Category category in ViewBag.Categories)
+                            {
+                                <option value="@category.Id">@category.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="subcategory">Podkategorie</label>
+                    <select name="subcategoryId" id="subcategory" class="form-control">
+                        <option value="">---</option>
+                        @{
+                            foreach (Subcategory subcategory in ViewBag.Subcategories)
+                            {
+                                <option value="@subcategory.Id">@subcategory.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="summary">Souhrn</label>
+                    <input name="summary" id="summary" type="textarea" class="form-control" placeholder="Zadejte souhrn" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Popis</label>
+                    <input name="description" id="description" type="textarea" class="form-control" placeholder="Zadejte popis" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="purpose">Určení</label>
+                    <input name="purpose" id="purpose" type="text" class="form-control" placeholder="Zadejte určení" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Druh</label>
+                    <input name="type" id="type" type="text" class="form-control" placeholder="Zadejte druh" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="material">Materiál</label>
+                    <input name="material" id="material" type="text" class="form-control" placeholder="Zadejte materiál" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="code">Kód</label>
+                    <input name="code" id="code" type="text" class="form-control" placeholder="Zadejte kód" required></input>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Přidat podkategorii</button>
+            </form>
+
+        </div>
+    </div>
+
+    </table>
+</div>
+    </div>
+</div>

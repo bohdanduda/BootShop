@@ -38,6 +38,16 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
+    name: "AdminHome",
+    pattern: "/admin",
+    defaults: new
+    {
+        Controller = "AdminHome",
+        Action = "AdminHome"
+    }
+    );
+
+app.MapControllerRoute(
     name: "Size",
     pattern: "/admin/size",
     defaults: new
@@ -148,12 +158,12 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
-    name: "AdminHome",
-    pattern: "/admin",
+    name: "AdminProduct",
+    pattern: "/admin/product",
     defaults: new
     {
-        Controller = "AdminHome",
-        Action = "AdminHome"
+        Controller = "Product",
+        Action = "Index"
     }
     );
 app.Run();
