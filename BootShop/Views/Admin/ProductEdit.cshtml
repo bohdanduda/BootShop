@@ -53,12 +53,12 @@
 
                 <div class="form-group">
                     <label for="summary">Souhrn</label>
-                    <textarea name="summary" id="summary" type="textarea" class="form-control" placeholder="Zadejte souhrn" required value="@ViewBag.product.Summary"></textarea>
+                    <textarea name="summary" id="summary" type="textarea" class="form-control" placeholder="Zadejte souhrn" required>@ViewBag.product.Summary</textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="description">Popis</label>
-                    <textarea name="description" id="description" type="textarea" class="form-control" placeholder="Zadejte popis" required value="@ViewBag.product.Description"></textarea>
+                    <textarea name="description" id="description" type="textarea" class="form-control" placeholder="Zadejte popis" required>@ViewBag.product.Description</textarea>
                 </div>
 
                 <div class="form-group">
@@ -81,6 +81,10 @@
                     <input name="code" id="code" type="text" class="form-control" placeholder="Zadejte kód" required value="@ViewBag.product.Code"></input>
                 </div>
 
+                <div class="form-group">
+                    <label for="primaryImageFilename">Hlavní foto</label>
+                    <input name="primaryImageFilename" id="primaryImageFilename" type="text" class="form-control" placeholder="Zadejte název hlavní fotografie" required value="@ViewBag.product.PrimaryImageFilename"></input>
+                </div>
 
                 <button type="submit" class="btn btn-primary">Upravit produkt</button>
             </form>

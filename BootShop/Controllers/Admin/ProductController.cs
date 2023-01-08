@@ -24,7 +24,7 @@ namespace BootShop.Controllers.Admin
             this.context.Products.Add(product);
             this.context.SaveChanges();
 
-            ViewBag.Products = this.context.Products;
+            ViewBag.Products = this.context.Products.Include(p => p.Brand).Include(p => p.Category).Include(p => p.Subcategory);
             ViewBag.Brands = this.context.Brands;
             ViewBag.Categories = this.context.Categories;
             ViewBag.Subcategories = this.context.Subcategories;

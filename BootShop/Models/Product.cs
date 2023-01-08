@@ -44,5 +44,8 @@ namespace BootShop.Models
 
         [Column("purpose")]
         public string Purpose { get; set; }
+
+        [Column("primary_image_filename")]
+        public string PrimaryImageFilename { get; set; }
     }
 }
