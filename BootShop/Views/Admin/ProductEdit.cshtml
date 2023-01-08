@@ -1,0 +1,94 @@
+﻿@using BootShop.Models;
+
+@{
+    Layout = "/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h1>Editace produktu ID: @ViewBag.product.Id</h1>
+    <div class="row">
+        <div class="col-sm-4">
+            <form method="post" class="well">
+                <div class="form-group">
+                    <label for="name">Název</label>
+                    <input name="name" id="name" type="text" class="form-control" placeholder="Zadejte název" required value="@ViewBag.product.Name"></input>
+                </div>
+                <div class="form-group">
+                    <label for="brand">Značka</label>
+                    <select name="brandId" id="brand" class="form-control" required>
+                        <option value="">---</option>
+
+                        @foreach (Brand brand in ViewBag.Brands)
+                        {
+                            <option value="@brand.Id" @(brand.Id==ViewBag.product.BrandId ? "selected" : "")>@brand.Name</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Kategorie</label>
+                    <select name="categoryId" id="category" class="form-control" required>
+                        <option value="">---</option>
+                        @{
+                            foreach (Category category in ViewBag.Categories)
+                            {
+                                <option value="@category.Id" @(category.Id==ViewBag.product.CategoryId ? "selected" : "")>@category.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="subcategory">Podkategorie</label>
+                    <select name="subcategoryId" id="subcategory" class="form-control">
+                        <option value="">---</option>
+                        @{
+                            foreach (Subcategory subcategory in ViewBag.Subcategories)
+                            {
+                                <option value="@subcategory.Id" @(subcategory.Id==ViewBag.product.SubcategoryId ? "selected" : "")>@subcategory.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="summary">Souhrn</label>
+                    <textarea name="summary" id="summary" type="textarea" class="form-control" placeholder="Zadejte souhrn" required value="@ViewBag.product.Summary"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Popis</label>
+                    <textarea name="description" id="description" type="textarea" class="form-control" placeholder="Zadejte popis" required value="@ViewBag.product.Description"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="purpose">Určení</label>
+                    <input name="purpose" id="purpose" type="text" class="form-control" placeholder="Zadejte určení" required value="@ViewBag.product.Purpose"></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Druh</label>
+                    <input name="type" id="type" type="text" class="form-control" placeholder="Zadejte druh" required value="@ViewBag.product.Type"></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="material">Materiál</label>
+                    <input name="material" id="material" type="text" class="form-control" placeholder="Zadejte materiál" required value="@ViewBag.product.Material"></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="code">Kód</label>
+                    <input name="code" id="code" type="text" class="form-control" placeholder="Zadejte kód" required value="@ViewBag.product.Code"></input>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Upravit produkt</button>
+            </form>
+
+        </div>
+    </div>
+
+    </table>
+</div>
+    </div>
+</div>

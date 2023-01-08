@@ -41,8 +41,8 @@
 
 
                             <td class="text-nowrap">
-                                <a href="@Url.RouteUrl("SubcategoryDelete", new {id = product.Id})" class="btn btn-danger">Smazat</a>
-                                <a href="@Url.RouteUrl("SubcategoryEdit", new {id = product.Id})" class="btn btn-primary">Upravit</a>
+                                <a href="@Url.RouteUrl("ProductDelete", new {id = product.Id})" class="btn btn-danger">Smazat</a>
+                                <a href="@Url.RouteUrl("ProductEdit", new {id = product.Id})" class="btn btn-primary">Upravit</a>
                             </td>
                         </tr>
                     }
@@ -99,12 +99,12 @@
 
                 <div class="form-group">
                     <label for="summary">Souhrn</label>
-                    <input name="summary" id="summary" type="textarea" class="form-control" placeholder="Zadejte souhrn" required></input>
+                    <textarea name="summary" id="summary" type="textarea" class="form-control" placeholder="Zadejte souhrn" required></textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="description">Popis</label>
-                    <input name="description" id="description" type="textarea" class="form-control" placeholder="Zadejte popis" required></input>
+                    <textarea name ="description" id="description" type="textarea" class="form-control" placeholder="Zadejte popis" required></textarea>
                 </div>
 
                 <div class="form-group">
@@ -128,7 +128,7 @@
                 </div>
 
 
-                <button type="submit" class="btn btn-primary">Přidat podkategorii</button>
+                <button type="submit" class="btn btn-primary">Přidat produkt</button>
             </form>
 
         </div>

@@ -158,7 +158,7 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
-    name: "AdminProduct",
+    name: "Product",
     pattern: "/admin/product",
     defaults: new
     {
@@ -166,4 +166,25 @@ app.MapControllerRoute(
         Action = "Index"
     }
     );
+
+app.MapControllerRoute(
+    name: "ProductDelete",
+    pattern: "/admin/product/{id}/delete",
+    defaults: new
+    {
+        Controller = "Product",
+        Action = "Delete"
+    }
+    );
+
+app.MapControllerRoute(
+    name: "ProductEdit",
+    pattern: "/admin/product/{id}/edit",
+    defaults: new
+    {
+        Controller = "Product",
+        Action = "Edit"
+    }
+    );
+
 app.Run();
