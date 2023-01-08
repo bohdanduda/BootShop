@@ -1,4 +1,6 @@
-﻿@{
+﻿@using BootShop.Models;
+
+@{
     Layout = "~/Views/Shop/Shared/_Layout.cshtml";
 }
 <div class="main-banner">
@@ -31,14 +33,14 @@
 </div>
 
 <div class="new-stock-container">
-    @foreach (var productVariant in ViewBag.ProductVariantCollection)
+    @foreach (Product_Variant productVariant in ViewBag.ProductVariants)
     {
-        <a href="@Url.RouteUrl("ProductDetail", new {id = @productVariant.GetId()})" class="new-stock-boots" style="text-decoration:none;">
-            <img src="images/@productVariant.GetMainPhotoPath()" height="280" width="250">
-            <p class="new-stock-boots-text new-stock-text-margin">@productVariant.GetName()</p>
+        <a href="@Url.RouteUrl("ProductDetail", new {id = @productVariant.Id})" class="new-stock-boots" style="text-decoration:none;">
+            <img src="images/@productVariant.Product.PrimaryImageFilename" height="280" width="250">
+            <p class="new-stock-boots-text new-stock-text-margin">@productVariant.Product.Name</p>
             <div class="price-container">
-                <p class="text-price">@productVariant.GetDiscountPrice() Kč</p>
-                <p class="old-price">@productVariant.GetStockPrice() Kč</p>
+                <p class="text-price">@productVariant.PriceDiscount Kč</p>
+                <p class="old-price">@productVariant.Price Kč</p>
             </div>
         </a>
     }

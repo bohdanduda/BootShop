@@ -1,4 +1,6 @@
-﻿@{
+﻿@using BootShop.Models;
+
+@{
     Layout = "~/Views/Shop/Shared/_Layout.cshtml";
 }
 
@@ -16,21 +18,21 @@
 <div class="product-container">
     <div class="product-image-text">
         <div class="product-images">
-            <img src="../images/@ViewBag.ProductVariant.GetMainPhotoPath()" class="main-product-image" alt="">
+            <img src="../images/@ViewBag.ProductVariant.Product.PrimaryImageFilename" class="main-product-image" alt="">
 
             <div class="detail-images">
-                <img src="../images/@ViewBag.ProductVariant.GetDetailPhotoPath()" class="left-image" alt="">
-                <img src="../images/@ViewBag.ProductVariant.GetDetailPhotoPath()" alt="">
-                <img src="../images/@ViewBag.ProductVariant.GetDetailPhotoPath()" alt="">
+                <img src="../images/@ViewBag.ProductVariant.Product.PrimaryImageFilename" class="left-image" alt="">
+                <img src="../images/@ViewBag.ProductVariant.Product.PrimaryImageFilename" alt="">
+                <img src="../images/@ViewBag.ProductVariant.Product.PrimaryImageFilename" alt="">
             </div>
         </div>
         <div class="product-description">
             <div class="name-and-brand">
-                <p class="product-name">@ViewBag.ProductVariant.GetName()</p>
+                <p class="product-name">@ViewBag.ProductVariant.Product.Name</p>
                 <img src="../images/logo.webp" height="40" alt="">
             </div>
 
-            <p class="product-description-text">@ViewBag.ProductVariant.GetDescription()</p>
+            <p class="product-description-text">@ViewBag.ProductVariant.Product.Description</p>
             <hr class="hr-splitter">
             <div class="color-size-container">
                 <div class="color">
@@ -58,10 +60,10 @@
                 </div>
             </div>
             <hr class="hr-splitter">
-            <p class="in-stock">@ViewBag.ProductVariant.GetInStock()</p>
-            <p class="price-before-discount reset-margin">@ViewBag.ProductVariant.GetStockPrice() Kč</p>
+            <p class="in-stock">@(ViewBag.ProductVariant.RemainingStock > 0 ? "Skladem":"Není skladem")</p>
+            <p class="price-before-discount reset-margin">@ViewBag.ProductVariant.Price Kč</p>
             <div class="price-button-container">
-                <p class="product-price">@ViewBag.ProductVariant.GetDiscountPrice() Kč</p>
+                <p class="product-price">@ViewBag.ProductVariant.PriceDiscount Kč</p>
                 <button class="add-to-basket-button"><p>Přidat do košíku</p></button>
             </div>
         </div>
@@ -70,21 +72,7 @@
         <div class="product-info">
             <p class="info-header">Informace o produktu</p>
             <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-            </p>
-            <h4 class="reset-margin">Sed quia consequuntur</h4>
-            <p class="reset-margin">
-                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                qui dolorem ipsum quia
-                dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
-                et dolore magnam aliquam quaerat voluptatem.
-            </p>
-            <p>
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
-                ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-                nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                @ViewBag.ProductVariant.Product.Description
             </p>
         </div>
 
@@ -92,15 +80,15 @@
             <div class="params-header"><p>Parametry produktu</p></div>
             <div class="product-params">
                 <div class="blue-background"><p class="bold-text">Barva</p></div>
-                <div class="blue-background"><p>@ViewBag.ProductVariant.GetColor()</p></div>
+                <div class="blue-background"><p>@ViewBag.ProductVariant.Color.Name</p></div>
                 <div><p class="bold-text">Druh</p></div>
-                <div><p>@ViewBag.ProductVariant.GetType()</p></div>
+                <div><p>@ViewBag.ProductVariant.Product.Type</p></div>
                 <div class="blue-background"><p class="bold-text">Materiál</p></div>
-                <div class="blue-background"><p>@ViewBag.ProductVariant.GetMaterial()</p></div>
+                <div class="blue-background"><p>@ViewBag.ProductVariant.Product.Material</p></div>
                 <div><p class="bold-text">Určení</p></div>
-                <div><p>@ViewBag.ProductVariant.GetUse()</p></div>
+                <div><p>@ViewBag.ProductVariant.Product.Purpose</p></div>
                 <div class="blue-background"><p class="bold-text">Kód</p></div>
-                <div class="blue-background"><p>@ViewBag.ProductVariant.GetCode()</p></div>
+                <div class="blue-background"><p>@ViewBag.ProductVariant.Product.Code</p></div>
             </div>
         </div>
     </div>
