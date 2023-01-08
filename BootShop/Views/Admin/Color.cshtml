@@ -5,24 +5,48 @@
 }
 
 <div class="container">
-    <h1>Barvy</h1>
-    @{
-        foreach (Color color in ViewBag.Colors)
-        {
-            <div style="display:flex; align-content: center;">
-                <div style="background-color: @color.HexCode; border-radius: 50%; width:20px; height:20px; margin-right:10px; border: 1px solid gray;"></div>
-                <p>@color.Id</p>
-                <p>@color.Name</p>
-                <p>@color.HexCode</p>
-                <a href="@Url.RouteUrl("ColorDelete", new {id = color.Id})" class="btn btn-danger">Smazat</a>
-            </div>
-        }
-    }
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Barvy</h1>
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>ID</th>
+                    <th>Název</th>
+                    <th>HexCode</th>
+                    <th>Náhled</th>
+                    <th></th>
+                </tr>
+                @{
+                    foreach (Color color in ViewBag.Colors)
+                    {
+                        <tr>
+                            <td>@color.Id</td>
+                            <td>@color.Name</td>
+                            <td><code>@color.HexCode</code></td>
+                            <td>
+                                <div style="background-color: @color.HexCode; border-radius: 50%; width:20px; height:20px; margin-right:10px; border: 1px solid gray;"></div>
+                            </td>
+                            <td>
+                                <a href="@Url.RouteUrl("ColorDelete", new {id = color.Id})" class="btn btn-danger">Smazat</a>
+                                <a href="@Url.RouteUrl("ColorEdit", new {id = color.Id})" class="btn btn-primary">Upravit</a>
+                            </td>
+                        </tr>
+                    }
+                }
 
-    <form method="post">
-        <label>Přidat novou barvu</label>
-        <input name="name" type="text"></input>
-        <input name="hexCode" type="text"></input>
-        <button>Odeslat</button>
-    </form>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <form method="post" class="well">
+                    <label for="name" class="form-label">Název</label>
+                    <input name="name" id="name" type="text" class="form-control form-control-color" placeholder="Zadejte název" required></input>
+                    <label for="hexCode" class="form-label">Barva</label>
+                    <input id="hexCode" name="hexCode" type="color"></input>
+                <button type="submit" class="btn btn-primary">Přidat barvu</button>
+            </form>
+        </div>
+    </div>
 </div>

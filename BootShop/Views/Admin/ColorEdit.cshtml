@@ -1,0 +1,44 @@
+﻿@using BootShop.Models;
+
+@{
+    Layout = "/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Úprava barvy</h1>
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>ID</th>
+                    <th>Název</th>
+                    <th>HexCode</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>@ViewBag.color.Id</td>
+                    <td>@ViewBag.color.Name</td>
+                    <td><code>@ViewBag.color.HexCode</code></td>
+                    <td>
+                        <div style="background-color: @ViewBag.color.HexCode; border-radius: 50%; width:20px; height:20px; margin-right:10px; border: 1px solid gray;"></div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <form method="post" class="well">
+                <label for="idValue">ID</label>
+                <div>@ViewBag.Color.Id</div>
+                <label for="name" class="form-label">Název</label>
+                <input name="name" id="name" type="text" class="form-control form-control-color" placeholder="Zadejte název" value="@ViewBag.Color.Name" required></input>
+                <label for="hexCode" class="form-label">Barva</label>
+                <input id="hexCode" name="hexCode" type="color" value="@ViewBag.Color.HexCode"></input>
+                <button type="submit" class="btn btn-primary">Upravit barvu</button>
+            </form>
+        </div>
+    </div>
+</div>

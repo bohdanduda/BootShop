@@ -34,5 +34,25 @@ namespace BootShop.Controllers.Admin
 
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public IActionResult Edit(Color color)
+        {
+            ViewBag.Color = this.context.Colors.Find(color.Id);
+
+            return View("/Views/Admin/ColorEdit.cshtml");
+        }
+
+
+        [HttpPost]
+        [ActionName("Edit")]
+        public IActionResult EditPost(Color color)
+        {
+            this.context.Colors.Update(color);
+            this.context.SaveChanges();
+
+            ViewBag.Color = color;
+            return View("/Views/Admin/ColorEdit.cshtml");
+        }
     }
 }

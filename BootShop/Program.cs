@@ -78,6 +78,16 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
+    name: "ColorEdit",
+    pattern: "/admin/color/{id}/edit",
+    defaults: new
+    {
+        Controller = "Color",
+        Action = "Edit"
+    }
+    );
+
+app.MapControllerRoute(
     name: "Category",
     pattern: "/admin/category",
     defaults: new
