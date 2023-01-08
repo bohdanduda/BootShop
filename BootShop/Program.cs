@@ -187,4 +187,33 @@ app.MapControllerRoute(
     }
     );
 
+app.MapControllerRoute(
+    name: "ProductVariant",
+    pattern: "/admin/product-variant",
+    defaults: new
+    {
+        Controller = "ProductVariant",
+        Action = "Index"
+    }
+    );
+
+app.MapControllerRoute(
+    name: "ProductVariantDelete",
+    pattern: "/admin/product-variant/{id}/delete",
+    defaults: new
+    {
+        Controller = "ProductVariant",
+        Action = "Delete"
+    }
+    );
+
+app.MapControllerRoute(
+    name: "ProductVariantEdit",
+    pattern: "/admin/product-variant/{id}/edit",
+    defaults: new
+    {
+        Controller = "ProductVariant",
+        Action = "Edit"
+    }
+    );
 app.Run();

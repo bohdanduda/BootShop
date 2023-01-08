@@ -1,0 +1,72 @@
+﻿@using BootShop.Models;
+
+@{
+    Layout = "/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h1>Editace varianty produktu ID: @ViewBag.ProductVariant.Id</h1>
+            <form method="post" class="well">
+                <div class="form-group">
+                    <label for="¨product">Produkt</label>
+                    <select name="productId" id="product" class="form-control" required>
+                        <option value="">---</option>
+                        @{
+                            foreach (Product product in ViewBag.Products)
+                            {
+                                <option value="@product.Id" @(product.Id==ViewBag.productVariant.ProductId ? "selected" : "")>@product.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="color">Barva</label>
+                    <select name="colorId" id="color" class="form-control" required>
+                        <option value="">---</option>
+                        @{
+                            foreach (Color color in ViewBag.Colors)
+                            {
+                                <option value="@color.Id" @(color.Id==ViewBag.productVariant.ColorId ? "selected" : "")>@color.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="size">Velikost</label>
+                    <select name="sizeId" id="size" class="form-control" required>
+                        <option value="">---</option>
+                        @{
+                            foreach (Size size in ViewBag.Sizes)
+                            {
+                                <option value="@size.Id"@(size.Id==ViewBag.productVariant.SizeId ? "selected" : "")>@size.Id</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="remainingStock">Skladem zbývá</label>
+                    <input name="remainingStock" id="remainingStock" type="number" class="form-control" value="@ViewBag.ProductVariant.RemainingStock" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Cena</label>
+                    <input name="price" id="price" type="number" class="form-control" value="@ViewBag.ProductVariant.Price"  required></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="priceDiscount">Cena zlevněná</label>
+                    <input name="priceDiscount" id="priceDiscount" type="number" class="form-control" value="@ViewBag.ProductVariant.PriceDiscount" required></input>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Upravit variantu produktu</button>
+            </form>
+
+        </div>
+    </div>
+    
+</div>

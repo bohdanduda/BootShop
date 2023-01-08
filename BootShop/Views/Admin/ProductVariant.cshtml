@@ -1,0 +1,109 @@
+﻿@using BootShop.Models;
+
+@{
+    Layout = "/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Varianty produktu</h1>
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>ID</th>
+                    <th>Produkt</th>
+                    <th>Barva</th>
+                    <th>Velikost</th>
+                    <th>Skladem zbývá</th>
+                    <th>Cena</th>
+                    <th>Cena zlevněná</th>
+                    <th></th>
+                </tr>
+                @{
+                    foreach (Product_Variant productVariant in ViewBag.ProductVariants)
+                    {
+                        <tr>
+                            <td>@productVariant.Id</td>
+                            <td>@productVariant.Product.Name</td>
+                            <td>@productVariant.Color.Name</td>
+                            <td>@productVariant.SizeId</td>
+                            <td>@productVariant.RemainingStock</td>
+                            <td>@productVariant.Price</td>
+                            <td>@productVariant.PriceDiscount</td>
+
+
+                            <td class="text-nowrap">
+                                <a href="@Url.RouteUrl("ProductVariantDelete", new {id = productVariant.Id})" class="btn btn-danger">Smazat</a>
+                                <a href="@Url.RouteUrl("ProductVariantEdit", new {id = productVariant.Id})" class="btn btn-primary">Upravit</a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-4">
+            <form method="post" class="well">
+                <div class="form-group">
+                    <label for="¨product">Produkt</label>
+                    <select name="productId" id="product" class="form-control" required>
+                        <option value="">---</option>
+                        @{
+                            foreach (Product product in ViewBag.Products)
+                            {
+                                <option value="@product.Id">@product.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="color">Barva</label>
+                    <select name="colorId" id="color" class="form-control" required>
+                        <option value="">---</option>
+                        @{
+                            foreach (Color color in ViewBag.Colors)
+                            {
+                                <option value="@color.Id">@color.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="size">Velikost</label>
+                    <select name="sizeId" id="size" class="form-control" required>
+                        <option value="">---</option>
+                        @{
+                            foreach (Size size in ViewBag.Sizes)
+                            {
+                                <option value="@size.Id">@size.Id</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="remainingStock">Skladem zbývá</label>
+                    <input name="remainingStock" id="remainingStock" type="number" class="form-control" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Cena</label>
+                    <input name="price" id="price" type="number" class="form-control" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label for="priceDiscount">Cena zlevněná</label>
+                    <input name="priceDiscount" id="priceDiscount" type="number" class="form-control" required></input>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Přidat variantu produktu</button>
+            </form>
+
+        </div>
+    </div>
+    
+</div>
