@@ -1,119 +1,36 @@
-﻿namespace BootShop.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BootShop.Models
 {
+    [Table("product_variant")]
     public class ProductVariant
     {
-        private int id;
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //PK, v db nastaveno jako auto_increment (automaticky vyplňuje databázi)
+        [Column("id")]
+        public int Id { get; set; }
 
-        private string name;
+        [Column("product_id")]
+        [ForeignKey("Product")]
+        public int ProductId { get; set; }
+        public virtual Product Product { get; set; }
 
-        private string description;
+        [Column("color_id")]
+        [ForeignKey("Color")]
+        public int ColorId { get; set; }
+        public virtual Color Color { get; set; }
 
-        private int discountPrice;
+        [Column("size_id")]
+        [ForeignKey("Size")]
+        public int SizeId { get; set; }
 
-        private int stockPrice;
+        [Column("remaining_stock")]
+        public int RemainingStock { get; set; }
 
-        private bool inStock;
+        [Column("price")]
+        public double Price { get; set; }
 
-        private string productColor;
+        [Column("price_discount")]
+        public double PriceDiscount { get; set; }
 
-        private string productType;
-
-        private string productMaterial;
-
-        private string productUse;
-
-        private string productCode;
-
-        private string mainPhotoPath;
-
-        private string detailPhotoPath;
-
-        public ProductVariant(int id, string name, string description, int discountPrice, int stockPrice, bool inStock, string productColor, string productType, string productMaterial, string productUse, string productCode, string mainPhotoPath, string detailPhotoPath)
-        {
-            this.id = id;
-            this.name = name;
-            this.description = description;
-            this.discountPrice = discountPrice;
-            this.stockPrice = stockPrice;
-            this.inStock = inStock;
-            this.productColor = productColor;
-            this.productType = productType;
-            this.productMaterial = productMaterial;
-            this.productUse = productUse;
-            this.productCode = productCode;
-            this.mainPhotoPath = mainPhotoPath;
-            this.detailPhotoPath = detailPhotoPath;
-        }
-
-        public int GetId()
-        {
-            return this.id;
-        }
-        public string GetName()
-        {
-            return this.name;
-        }
-
-        public string GetDescription()
-        {
-            return this.description;
-        }
-
-        public int GetDiscountPrice()
-        {
-            return this.discountPrice;
-        }
-
-        public int GetStockPrice()
-        {
-            return this.stockPrice;
-        }
-
-        public string GetInStock()
-        {
-            if (this.inStock)
-            {
-                return "Skladem";
-            }
-            else
-            {
-                return "Není Skladem";
-            }
-        }
-
-        public string GetColor()
-        {
-            return this.productColor;
-        }
-
-        public string GetType()
-        {
-            return this.productType;
-        }
-
-        public string GetMaterial()
-        {
-            return this.productMaterial;
-        }
-
-        public string GetUse()
-        {
-            return this.productUse;
-        }
-
-        public string GetCode()
-        {
-            return this.productCode;
-        }
-        
-        public string GetMainPhotoPath()
-        {
-            return this.mainPhotoPath;
-        }
-
-        public string GetDetailPhotoPath()
-        {
-            return this.detailPhotoPath;
-        }
     }
 }

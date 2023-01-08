@@ -33,7 +33,7 @@
 </div>
 
 <div class="new-stock-container">
-    @foreach (Product_Variant productVariant in ViewBag.ProductVariants)
+    @foreach (ProductVariant productVariant in ViewBag.ProductVariants)
     {
         <a href="@Url.RouteUrl("ProductDetail", new {id = @productVariant.Id})" class="new-stock-boots" style="text-decoration:none;">
             <img src="images/@productVariant.Product.PrimaryImageFilename" height="280" width="250">

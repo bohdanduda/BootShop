@@ -8,7 +8,7 @@ namespace BootShop.Controllers.Shop
     {
         private BootShopContext context = new BootShopContext();
 
-        public IActionResult ProductDetail(Product_Variant productVariant)
+        public IActionResult ProductDetail(ProductVariant productVariant)
         {
             ViewBag.ProductVariant = this.context.ProductVariants
                 .Include(v => v.Product)

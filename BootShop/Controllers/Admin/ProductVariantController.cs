@@ -19,7 +19,7 @@ namespace BootShop.Controllers.Admin
         }
 
         [HttpPost]
-        public IActionResult Index(Product_Variant productVariant)
+        public IActionResult Index(ProductVariant productVariant)
         {
             this.context.ProductVariants.Add(productVariant);
             this.context.SaveChanges();
@@ -33,7 +33,7 @@ namespace BootShop.Controllers.Admin
         }
 
         [HttpGet]
-        public IActionResult Delete(Product_Variant productVariant)
+        public IActionResult Delete(ProductVariant productVariant)
         {
             this.context.ProductVariants.Remove(productVariant);
             this.context.SaveChanges();
@@ -42,7 +42,7 @@ namespace BootShop.Controllers.Admin
         }
 
         [HttpGet]
-        public IActionResult Edit(Product_Variant productVariant)
+        public IActionResult Edit(ProductVariant productVariant)
         {
             ViewBag.ProductVariant = this.context.ProductVariants.Find(productVariant.Id);
             ViewBag.Products = this.context.Products;
@@ -53,7 +53,7 @@ namespace BootShop.Controllers.Admin
         }
         [HttpPost]
         [ActionName("Edit")]
-        public IActionResult EditPost(Product_Variant productVariant)
+        public IActionResult EditPost(ProductVariant productVariant)
         {
             this.context.ProductVariants.Update(productVariant);
             this.context.SaveChanges();

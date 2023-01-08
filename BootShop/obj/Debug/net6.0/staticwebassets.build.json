@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UfcqD9QTWZJLYZBjxBqSKuVfV2cGytxDTXI0PyYvDUQ=",
+  "Hash": "0xsJrrC1es4OGLeWGzhptsz90Ln6vaPpbw8ZCapBSJw=",
   "Source": "BootShop",
   "BasePath": "_content/BootShop",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\legs.png"
+    },
+    {
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\logo.webp",
+      "SourceId": "BootShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
+      "BasePath": "_content/BootShop",
+      "RelativePath": "images/logo.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.webp"
     },
     {
       "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\loupe.png",
