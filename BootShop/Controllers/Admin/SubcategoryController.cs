@@ -10,7 +10,7 @@ namespace BootShop.Controllers.Admin
         [HttpGet]
         public IActionResult Index()
         {
-            ViewBag.Subcategories = this.context.Subcategories.Include(s => s.Category); // https://learn.microsoft.com/en-us/ef/ef6/querying/related-data 
+            ViewBag.Subcategories = this.context.Subcategories.Include(s => s.Category); //najoinuje data z category https://learn.microsoft.com/en-us/ef/ef6/querying/related-data 
             ViewBag.Categories = this.context.Categories;
 
             return View("/Views/Admin/Subcategory.cshtml");
@@ -35,6 +35,26 @@ namespace BootShop.Controllers.Admin
             this.context.SaveChanges();
 
             return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult Edit(Subcategory subcategory)
+        {
+            ViewBag.Subcategory = this.context.Subcategories.Where(s => s.Id == subcategory.Id).Include(s => s.Category).Single();
+
+            return View("/Views/Admin/SubcategoryEdit.cshtml");
+        }
+
+        [HttpPost]
+        [ActionName("Edit")]
+        public IActionResult EditPost(Subcategory subcategory)
+        {
+            this.context.Subcategories.Update(subcategory);
+            this.context.SaveChanges();
+
+            ViewBag.Subcategory = this.context.Subcategories.Where(s => s.Id == subcategory.Id).Include(s => s.Category).Single();
+            
+            return View("/Views/Admin/SubcategoryEdit.cshtml");
         }
     }
 }
