@@ -28,6 +28,16 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
+    name: "ProductList",
+    pattern: "/produkty",
+    defaults: new
+    {
+        Controller = "ProductList",
+        Action = "Index",
+    }
+    );
+
+app.MapControllerRoute(
     name: "ProductDetail",
     pattern: "/produkty/{id}",
     defaults: new

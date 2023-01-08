@@ -293,14 +293,15 @@
         margin-bottom: 10px;
     }
 
-    .show-stock-button button {
-        background: #c7232e;
-        border: none;
-        color: white;
-        height: 50px;
-        width: 225px;
-        font-size: 16px;
-    }
+        .show-stock-button button {
+            background: #c7232e;
+            border: none;
+            color: white;
+            height: 50px;
+            width: 225px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
     .icons-with-text {
         display: flex;

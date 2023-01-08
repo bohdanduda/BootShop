@@ -1,0 +1,26 @@
+﻿@using BootShop.Models;
+
+@{
+    Layout = "~/Views/Shop/Shared/_Layout.cshtml";
+}
+
+<div class="text-container">
+    <p class="red-text">Naše&nbsp;</p>
+    <p class="blue-text">nabídka</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="new-stock-container">
+    @foreach (ProductVariant productVariant in ViewBag.ProductVariants)
+    {
+        <a href="@Url.RouteUrl("ProductDetail", new {id = @productVariant.Id})" class="new-stock-boots" style="text-decoration:none;">
+            <img src="images/@productVariant.Product.PrimaryImageFilename" height="280" width="250">
+            <p class="new-stock-boots-text new-stock-text-margin">@productVariant.Product.Name</p>
+            <div class="price-container">
+                <p class="text-price">@productVariant.PriceDiscount Kč</p>
+                <p class="old-price">@productVariant.Price Kč</p>
+            </div>
+        </a>
+    }
+</div>
