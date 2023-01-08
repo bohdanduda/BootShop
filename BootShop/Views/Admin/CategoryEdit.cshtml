@@ -1,0 +1,44 @@
+﻿@using BootShop.Models;
+
+@{
+    Layout = "/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Upravení kategorie</h1>
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>ID</th>
+                    <th>Název</th>
+                    <th>Podkategorie</th>
+                </tr>
+                <tr>
+                    <td>@ViewBag.Category.Id</td>
+                    <td>@ViewBag.Category.Name</td>
+                    <td>
+                        <ul>
+                            @foreach (Subcategory subcategory in ViewBag.Subcategories)
+                            {
+                                <li>@subcategory.Name</li>
+                            }
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <form method="post" class="well">
+                <div class="form-group">
+                    <label for="name">Název</label>
+                    <input id="name" name="name" type="text" class="form-control" placeholder="Zadejte název" required></input>
+                </div>
+                <button type="submit" class="btn btn-primary">Upravit kategorii</button>
+            </form>
+        </div>
+    </div>
+</div>

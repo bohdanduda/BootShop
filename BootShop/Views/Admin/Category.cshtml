@@ -29,7 +29,10 @@
                                 }
                             </ul>
                         </td>
-                        <td><a href="@Url.RouteUrl("CategoryDelete", new {id = category.Id})" class="btn btn-danger">Smazat</a></td>
+                        <td>
+                            <a href="@Url.RouteUrl("CategoryDelete", new {id = category.Id})" class="btn btn-danger">Smazat</a>
+                            <a href="@Url.RouteUrl("CategoryEdit", new {id = category.Id})" class="btn btn-primary">Upravit</a>    
+                        </td>
                     </tr>
                 }
 

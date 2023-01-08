@@ -36,5 +36,27 @@ namespace BootShop.Controllers.Admin
 
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public IActionResult Edit(Category category)
+        {
+            ViewBag.Category = this.context.Categories.Find(category.Id);
+            ViewBag.SubCategories = this.context.Subcategories.Where(s => s.CategoryId == category.Id).ToList();
+
+            return View("/Views/Admin/CategoryEdit.cshtml");
+        }
+
+        [HttpPost]
+        [ActionName("Edit")]
+        public IActionResult EditPost(Category category)
+        {
+            this.context.Categories.Update(category);
+            this.context.SaveChanges();
+
+            ViewBag.Category = category;
+            ViewBag.SubCategories = this.context.Subcategories.Where(s => s.CategoryId == category.Id).ToList();
+
+            return View("/Views/Admin/CategoryEdit.cshtml");
+        }
     }
 }
