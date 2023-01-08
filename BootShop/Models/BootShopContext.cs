@@ -4,10 +4,10 @@ namespace BootShop.Models
 {
     public class BootShopContext : DbContext
     {
-        public DbSet<Category> Category { get; set; }
-        public DbSet<Color> Color { get; set; }
-        public DbSet<Size> Size { get; set; }
-        public DbSet<Subcategory> Subcategory { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Color> Colors { get; set; }
+        public DbSet<Size> Sizes { get; set; }
+        public DbSet<Subcategory> Subcategories { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

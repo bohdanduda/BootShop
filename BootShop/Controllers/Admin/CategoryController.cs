@@ -11,7 +11,7 @@ namespace BootShop.Controllers.Admin
         [HttpGet]
         public IActionResult Index()
         {
-            ViewBag.Categories = this.context.Category.Include(c => c.Subcategories); // https://learn.microsoft.com/en-us/ef/ef6/querying/related-data ;
+            ViewBag.Categories = this.context.Categories.Include(c => c.Subcategories); // https://learn.microsoft.com/en-us/ef/ef6/querying/related-data ;
 
             return View("/Views/Admin/Category.cshtml");
         }
@@ -19,9 +19,9 @@ namespace BootShop.Controllers.Admin
         [HttpPost]
         public IActionResult Index(Category category)
         {
-            this.context.Category.Add(category);
+            this.context.Categories.Add(category);
             this.context.SaveChanges();
-            ViewBag.Categories = this.context.Category.Include(c => c.Subcategories);
+            ViewBag.Categories = this.context.Categories.Include(c => c.Subcategories);
 
             return View("/Views/Admin/Category.cshtml");
         }
@@ -29,9 +29,9 @@ namespace BootShop.Controllers.Admin
         [HttpGet]
         public IActionResult Delete(Category category)
         {
-            List<Subcategory> subcategories = this.context.Subcategory.Where(s => s.CategoryId == category.Id).ToList();
-            this.context.Subcategory.RemoveRange(subcategories);
-            this.context.Category.Remove(category);
+            List<Subcategory> subcategories = this.context.Subcategories.Where(s => s.CategoryId == category.Id).ToList();
+            this.context.Subcategories.RemoveRange(subcategories);
+            this.context.Categories.Remove(category);
             this.context.SaveChanges();
 
             return RedirectToAction("Index");

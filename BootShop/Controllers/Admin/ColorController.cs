@@ -11,7 +11,7 @@ namespace BootShop.Controllers.Admin
         [HttpGet]
         public IActionResult Index()
         {
-            ViewBag.Colors = this.context.Color.ToList();
+            ViewBag.Colors = this.context.Colors.ToList();
 
             return View("/Views/Admin/Color.cshtml");
         }
@@ -19,9 +19,9 @@ namespace BootShop.Controllers.Admin
         [HttpPost]
         public IActionResult Index(Color color)
         {
-            this.context.Color.Add(color);
+            this.context.Colors.Add(color);
             this.context.SaveChanges();
-            ViewBag.Colors = this.context.Color.ToList();
+            ViewBag.Colors = this.context.Colors.ToList();
 
             return View("/Views/Admin/Color.cshtml");
         }
