@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\BootShop.csproj": {}
+    "X:\\$PROGRAMOVANI\\BootShop\\BootShop\\BootShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\BootShop.csproj": {
+    "X:\\$PROGRAMOVANI\\BootShop\\BootShop\\BootShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\BootShop.csproj",
+        "projectUniqueName": "X:\\$PROGRAMOVANI\\BootShop\\BootShop\\BootShop.csproj",
         "projectName": "BootShop",
-        "projectPath": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\BootShop.csproj",
-        "packagesPath": "C:\\Users\\dudab\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\obj\\",
+        "projectPath": "X:\\$PROGRAMOVANI\\BootShop\\BootShop\\BootShop.csproj",
+        "packagesPath": "C:\\Users\\dudabohdan\\.nuget\\packages\\",
+        "outputPath": "X:\\$PROGRAMOVANI\\BootShop\\BootShop\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dudab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dudabohdan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +46,10 @@
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.7, )"
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.4.0, )"
             }
           },
           "imports": [
@@ -64,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

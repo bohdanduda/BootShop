@@ -8,77 +8,77 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BootShop
 build_property.RootNamespace = BootShop
-build_property.ProjectDir = C:\Users\dudab\Desktop\SKOLA\VISUALY\$ASP\BootShop\BootShop\
+build_property.ProjectDir = X:\$PROGRAMOVANI\BootShop\BootShop\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\dudab\Desktop\SKOLA\VISUALY\$ASP\BootShop\BootShop
+build_property.MSBuildProjectDirectory = X:\$PROGRAMOVANI\BootShop\BootShop
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/AdminHome.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/AdminHome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5Ib21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/Category.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/Category.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/CategoryEdit.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/CategoryEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0ZWdvcnlFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/Color.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/Color.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29sb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/ColorEdit.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/ColorEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29sb3JFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/Product.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/Product.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/ProductEdit.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/ProductEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/ProductVariant.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/ProductVariant.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdFZhcmlhbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/ProductVariantEdit.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/ProductVariantEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdFZhcmlhbnRFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/Shared/_Layout.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/Size.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/Size.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2l6ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/Subcategory.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/Subcategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3ViY2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Admin/SubcategoryEdit.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Admin/SubcategoryEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3ViY2F0ZWdvcnlFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Shop/Index.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Shop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Shop/ProductDetail.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Shop/ProductDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxQcm9kdWN0RGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Shop/ProductList.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Shop/ProductList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxQcm9kdWN0TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Shop/Shared/_Layout.cshtml]
+[X:/$PROGRAMOVANI/BootShop/BootShop/Views/Shop/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxTaGFyZWRcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
