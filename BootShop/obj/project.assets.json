@@ -6329,23 +6329,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dudabohdan\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\dudab\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\$PROGRAMOVANI\\BootShop\\BootShop\\BootShop.csproj",
+      "projectUniqueName": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\BootShop.csproj",
       "projectName": "BootShop",
-      "projectPath": "X:\\$PROGRAMOVANI\\BootShop\\BootShop\\BootShop.csproj",
-      "packagesPath": "C:\\Users\\dudabohdan\\.nuget\\packages\\",
-      "outputPath": "X:\\$PROGRAMOVANI\\BootShop\\BootShop\\obj\\",
+      "projectPath": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\BootShop.csproj",
+      "packagesPath": "C:\\Users\\dudab\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\dudabohdan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dudab\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6399,7 +6395,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

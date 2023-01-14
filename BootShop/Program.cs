@@ -226,4 +226,13 @@ app.MapControllerRoute(
         Action = "Edit"
     }
     );
+
+app.MapControllerRoute(
+    name: "AdminLogin",
+    pattern: "/admin/login",
+    defaults: new
+    {
+        Controller = "AdminLogin",
+        Action = "Index"
+    });
 app.Run();
