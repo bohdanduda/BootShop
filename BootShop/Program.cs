@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession();
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
@@ -17,6 +18,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseStaticFiles();
 app.UseRouting();
+app.UseSession();
 app.MapControllerRoute(
     name: "home",
     pattern: "/",
@@ -235,4 +237,14 @@ app.MapControllerRoute(
         Controller = "AdminLogin",
         Action = "Index"
     });
+
+app.MapControllerRoute(
+    name: "AdminLogout",
+    pattern: "/admin/logout",
+    defaults: new
+    {
+        Controller = "AdminLogout",
+        Action = "Logout"
+    });
+
 app.Run();

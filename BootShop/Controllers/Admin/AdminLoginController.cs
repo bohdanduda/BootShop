@@ -15,10 +15,13 @@ namespace BootShop.Controllers.Admin
             {
                 ViewBag.Message = "Zadaná kombinace jména a hesla není správná";
                 ViewBag.Username = username;
+
                 return View("/Views/Admin/AdminLogin.cshtml");
             }
 
-            return View("/Views/Admin/AdminHome.cshtml");
+            this.HttpContext.Session.SetString("login", adminData.Username);
+
+            return RedirectToAction("AdminHome", "AdminHome");
         }
     }
 }
