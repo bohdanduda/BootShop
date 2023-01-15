@@ -18,12 +18,13 @@
 <div class="product-container">
     <div class="product-image-text">
         <div class="product-images">
-            <img src="../images/@ViewBag.ProductVariant.Product.PrimaryImageFilename" class="main-product-image" alt="">
+            <img src="../productImages/@ViewBag.ProductVariant.Product.PrimaryImageFilename" class="main-product-image" alt="">
 
             <div class="detail-images">
-                <img src="../images/@ViewBag.ProductVariant.Product.PrimaryImageFilename" class="left-image" alt="">
-                <img src="../images/@ViewBag.ProductVariant.Product.PrimaryImageFilename" alt="">
-                <img src="../images/@ViewBag.ProductVariant.Product.PrimaryImageFilename" alt="">
+                @foreach (ProductPhoto productPhoto in ViewBag.ProductPhotos)
+                {
+                    <img src="../productImages/@productPhoto.Filename" class="left-image" alt="">
+                }
             </div>
         </div>
         <div class="product-description">

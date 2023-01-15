@@ -12,6 +12,7 @@ namespace BootShop.Models
         public DbSet<ProductVariant> ProductVariants { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<AdminData> AdminDatas { get; set; }
+        public DbSet<ProductPhoto> ProductPhotos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

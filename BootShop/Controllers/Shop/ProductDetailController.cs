@@ -27,6 +27,7 @@ namespace BootShop.Controllers.Shop
             ViewBag.ProductVariant = productVariant;
             ViewBag.DefaultProductVariantsForColors = this.GetDefaultVariantsForProductColors(productVariant.ProductId);
             ViewBag.DefaultProductVariantsForSizes = this.GetDefaultVariantsForProductSizes(productVariant.ProductId);
+            ViewBag.ProductPhotos = this.context.ProductPhotos.Where(pp => pp.ProductId == productVariant.ProductId);
 
             return View("/Views/Shop/ProductDetail.cshtml");
         }

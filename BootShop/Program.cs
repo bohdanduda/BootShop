@@ -230,6 +230,26 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
+    name: "ProductPhoto",
+    pattern: "/admin/product-photo",
+    defaults: new
+    {
+        Controller = "ProductPhoto",
+        Action = "Index"
+    }
+    );
+
+app.MapControllerRoute(
+    name: "ProductPhotoDelete",
+    pattern: "/admin/product-photo/{id}/delete",
+    defaults: new
+    {
+        Controller = "ProductPhoto",
+        Action = "Delete"
+    }
+    );
+
+app.MapControllerRoute(
     name: "AdminLogin",
     pattern: "/admin/login",
     defaults: new

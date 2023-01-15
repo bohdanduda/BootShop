@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JGZpKvGQktMq2CLHN1POukh9Kpbjx6T15VA8iJkP6Zc=",
+  "Hash": "YMJWLGcdSm7nbeS1LeTAkpqiMt1gt+b6gcHGrnqCQHE=",
   "Source": "BootShop",
   "BasePath": "_content/BootShop",
   "Mode": "Default",
@@ -627,40 +627,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\a58593ea-26cb-11ed-842e-02420a000a33.png"
-    },
-    {
-      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\arnold.jpg",
-      "SourceId": "BootShop",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
-      "BasePath": "_content/BootShop",
-      "RelativePath": "images/arnold.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\arnold.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\averageProgrammer.jpg",
-      "SourceId": "BootShop",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
-      "BasePath": "_content/BootShop",
-      "RelativePath": "images/averageProgrammer.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\averageProgrammer.jpg"
     },
     {
       "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\images\\basket.png",
@@ -1324,6 +1290,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\twitter.svg"
+    },
+    {
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\productImages\\arnold.jpg",
+      "SourceId": "BootShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
+      "BasePath": "_content/BootShop",
+      "RelativePath": "productImages/arnold.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\productImages\\arnold.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\productImages\\averageProgrammer.jpg",
+      "SourceId": "BootShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
+      "BasePath": "_content/BootShop",
+      "RelativePath": "productImages/averageProgrammer.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\productImages\\averageProgrammer.jpg"
     }
   ]
 }
