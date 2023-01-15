@@ -1,0 +1,169 @@
+﻿@using BootShop.Models;
+
+@{
+    Layout = "~/Views/Shop/Shared/_Layout.cshtml";
+}
+
+<div class="text-container">
+    <p class="blue-text">Košík</p>
+</div>
+
+<div class="shopping-cart">
+    <div class="cart-heading">
+        <p>Produkt</p>
+        <p>Název produktu</p>
+        <p>Cena produktu</p>
+        <p>Množství</p>
+        <p>Celková cena</p>
+        <p>Odebrat</p>
+    </div>
+    @foreach (ShoppingCartItem shoppingCartItem in @ViewBag.ShoppingCart.Items)
+    {
+        <div class="product">
+            <div class="product-image-container">
+                <img src="../productImages/@shoppingCartItem.ProductVariant.Product.PrimaryImageFilename" alt="">
+            </div>
+            <p class="product-name">@shoppingCartItem.ProductVariant.Product.Name, barva: @shoppingCartItem.ProductVariant.Color.Name, velikost: @shoppingCartItem.ProductVariant.SizeId
+            <p class="product-price">@shoppingCartItem.ProductVariant.PriceDiscount Kč</p>
+            <div class="quantity-container">
+                <div class="quantity">
+                    <p class="less-sign"><a href="@Url.RouteUrl("ShoppingCartDecreaseItem", new{id=@shoppingCartItem.ProductVariant.Id})">(-)</a></p>
+                    <p class="quantity-text">@shoppingCartItem.Amount</p>
+                    <p class="more-sign"><a href="@Url.RouteUrl("ShoppingCartAddItem", new{id=@shoppingCartItem.ProductVariant.Id})">(+)</a></p>
+                </div>
+            </div>
+            <p class="end-price">@(shoppingCartItem.ProductVariant.PriceDiscount * shoppingCartItem.Amount) Kč</p>
+            <p class="remove-sign"><a href="@Url.RouteUrl("ShoppingCartRemoveItem", new{id=@shoppingCartItem.ProductVariant.Id})">X</a></p>
+        </div>
+    }
+
+</div>
+
+<div class="under-cart-buttons">
+    <button><p><a href="@Url.RouteUrl("ProductList")">Pokračovat v nakupování</a></p></button>
+    <button><p><a href="@Url.RouteUrl("ShoppingCartClear")">Vyprázdnit košík</a></p></button>
+</div>
+
+<style>
+    a {
+        text-decoration: none !important;
+    }
+
+    .shopping-cart {
+        margin: 50px 120px 25px 120px;
+    }
+
+    .cart-heading {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        text-align: center;
+        border: 1px solid #b6bed5;
+    }
+
+        .cart-heading p {
+            border-left: 1px solid #b6bed5;
+            margin: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width: 100%;
+        }
+
+    .product {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        text-align: center;
+        border: 1px solid #b6bed5;
+        border-top: none;
+        align-items: center;
+    }
+
+    .product-image-container {
+        border-right: 1px solid #b6bed5;
+        width: 100%;
+        height: 100%;
+    }
+
+        .product-image-container img {
+            width: 160px;
+            height: 160px;
+        }
+
+    .product-name {
+        width: 100%;
+        border-right: 1px solid #b6bed5;
+        margin: 0;
+        padding-top: 64px;
+        padding-bottom: 63px
+    }
+
+    .product-price {
+        width: 100%;
+        border-right: 1px solid #b6bed5;
+        margin: 0;
+        padding-top: 73px;
+        padding-bottom: 73px
+    }
+
+    .quantity-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-right: 1px solid #b6bed5;
+    }
+
+    .quantity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #b6bed5;
+        width: 120px;
+        height: 40px;
+    }
+
+    .less-sign, .more-sign, .remove-sign {
+        cursor: pointer;
+    }
+
+    .less-sign {
+        margin-right: 25px;
+    }
+
+    .more-sign {
+        margin-left: 25px;
+    }
+
+    .under-cart-buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 120px;
+        margin-bottom: 50px;
+    }
+
+        .under-cart-buttons a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .under-cart-buttons button {
+            background: #c7232e;
+            color: white;
+            border: 1px solid #b6bed5;
+            height: 50px;
+            margin-left: 20px;
+        }
+
+            .under-cart-buttons button p {
+                margin: 10px;
+                font-weight: bold;
+            }
+
+    .end-price {
+        width: 100%;
+        border-right: 1px solid #b6bed5;
+        margin: 0;
+        padding-top: 73px;
+        padding-bottom: 73px
+    }
+</style>

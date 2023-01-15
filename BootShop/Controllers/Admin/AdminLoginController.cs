@@ -9,7 +9,7 @@ namespace BootShop.Controllers.Admin
         public BootShopContext context = new BootShopContext();
         public IActionResult Index(string? username, string? password)
         {
-            AdminUser admin = this.context.AdminUsers.Where(x => x.Username == username).FirstOrDefault();
+            Models.AdminUser admin = this.context.Admins.Where(x => x.Username == username).FirstOrDefault();
 
             if (admin==null || admin.Password != password)
             {

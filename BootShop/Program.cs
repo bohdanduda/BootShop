@@ -50,6 +50,56 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
+    name: "ShoppingCart",
+    pattern: "/kosik",
+    defaults: new
+    {
+        Controller = "ShoppingCart",
+        Action = "Index",
+    }
+    );
+
+app.MapControllerRoute(
+    name: "ShoppingCartAddItem",
+    pattern: "/kosik/pridat/{id}",
+    defaults: new
+    {
+        Controller = "ShoppingCart",
+        Action = "AddItem",
+    }
+    );
+
+app.MapControllerRoute(
+    name: "ShoppingCartDecreaseItem",
+    pattern: "/kosik/snizit/{id}",
+    defaults: new
+    {
+        Controller = "ShoppingCart",
+        Action = "DecreaseItem",
+    }
+    );
+
+app.MapControllerRoute(
+    name: "ShoppingCartRemoveItem",
+    pattern: "/kosik/odebrat/{id}",
+    defaults: new
+    {
+        Controller = "ShoppingCart",
+        Action = "RemoveItem",
+    }
+    );
+
+app.MapControllerRoute(
+    name: "ShoppingCartClear",
+    pattern: "/kosik/vysypat",
+    defaults: new
+    {
+        Controller = "ShoppingCart",
+        Action = "Clear",
+    }
+    );
+
+app.MapControllerRoute(
     name: "AdminHome",
     pattern: "/admin",
     defaults: new

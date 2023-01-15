@@ -76,7 +76,7 @@
             <p class="price-before-discount reset-margin">@ViewBag.ProductVariant.Price Kč</p>
             <div class="price-button-container">
                 <p class="product-price">@ViewBag.ProductVariant.PriceDiscount Kč</p>
-                <button class="add-to-basket-button"><p>Přidat do košíku</p></button>
+                <a href="@Url.RouteUrl("ShoppingCartAddItem", new{id=ViewBag.ProductVariant.Id})"><button class="add-to-basket-button"><p>Přidat do košíku</p></button></a>
             </div>
         </div>
     </div>

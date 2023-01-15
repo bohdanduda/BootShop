@@ -319,6 +319,7 @@
         background: #c7232e;
         color: white;
         border: none;
+        cursor: pointer;
     }
 
         .add-to-basket-button p {
