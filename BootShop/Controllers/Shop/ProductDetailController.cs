@@ -36,6 +36,7 @@ namespace BootShop.Controllers.Shop
         {
             List<ProductVariant> allProductVariants = this.context.ProductVariants
                 .Where(pv => pv.ProductId == productId)
+                .OrderBy(pv => pv.ColorId)
                 .Include(pv => pv.Color)
                 .ToList();
 
@@ -57,6 +58,7 @@ namespace BootShop.Controllers.Shop
         {
             List<ProductVariant> allProductVariants = this.context.ProductVariants
                 .Where(pv => pv.ProductId == productId)
+                .OrderBy(pv => pv.SizeId)
                 .ToList();
 
             List<int> productSizes = new List<int>();
