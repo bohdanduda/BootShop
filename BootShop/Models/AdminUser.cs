@@ -2,17 +2,17 @@
 
 namespace BootShop.Models
 {
-    [Table("admin_data")]
-    public class AdminData
+    [Table("admin")]
+    public class AdminUser
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("id")]
         public int Id { get; set; }
 
-        [Column("admin_username")]
+        [Column("username")]
         public string Username { get; set; }
         
-        [Column("admin_password")]
+        [Column("password")]
         public string Password{ get; set; }
     }
 }
