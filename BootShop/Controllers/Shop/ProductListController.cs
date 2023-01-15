@@ -10,19 +10,19 @@ namespace BootShop.Controllers.Shop
     {
         private BootShopContext context = new BootShopContext();
 
-        public IActionResult Index(int? priceMin, int? priceMax, int? categoryId, string? orderBy)
+        public IActionResult Index(int? priceFrom, int? priceTo, int? categoryId, string? orderBy)
         {
             {
                 IQueryable<ProductVariant> productVariants = this.context.ProductVariants.Include(v => v.Product);
                 
-                if (priceMin != null)
+                if (priceFrom != null)
                 {
-                    productVariants = productVariants.Where(pv => pv.PriceDiscount >= priceMin);
+                    productVariants = productVariants.Where(pv => pv.PriceDiscount >= priceFrom);
                 }
 
-                if (priceMax != null)
+                if (priceTo != null)
                 {
-                    productVariants = productVariants.Where(pv => pv.PriceDiscount <= priceMax);
+                    productVariants = productVariants.Where(pv => pv.PriceDiscount <= priceTo);
                 }
 
                 if (categoryId != null)
@@ -40,11 +40,17 @@ namespace BootShop.Controllers.Shop
                     productVariants = productVariants.OrderBy(pv => pv.Product.Name);
                 }
 
-                ViewBag.productVariants = productVariants;
-                ViewBag.PriceMax = context.ProductVariants.Max(v => v.PriceDiscount);
-                ViewBag.PriceMin = context.ProductVariants.Min(v => v.PriceDiscount);
-                ViewBag.Categories = this.context.Categories;
+                int priceMax = (int)this.context.ProductVariants.Max(v => v.PriceDiscount);
+                int priceMin = (int)this.context.ProductVariants.Min(v => v.PriceDiscount);
 
+                ViewBag.productVariants = productVariants;
+                ViewBag.PriceMax = priceMax;
+                ViewBag.PriceMin = priceMin;
+                ViewBag.PriceTo = priceTo == null ? priceMax : priceTo;
+                ViewBag.PriceFrom = priceFrom == null ? priceMin : priceFrom;
+                ViewBag.Categories = this.context.Categories;
+                ViewBag.CategoryId = categoryId;
+                ViewBag.OrderBy = orderBy;
 
                 return View("/Views/Shop/ProductList.cshtml");
             }
