@@ -18,8 +18,8 @@
         </div>
 
         <div class="login">
-            <a href=""><img src="../../images/profile-user.svg" height="23" width="23" alt="" /></a>
-            <p>Přihlásit se</p>
+            <img src="../../images/profile-user.svg" height="23" width="23" alt="" />
+            <p><a href="@Url.RouteUrl("AdminLogin")" style="text-decoration: none; color: white;">Přihlásit se</a></p>
         </div>
     </header>
 
@@ -29,7 +29,7 @@
         <div class="upper-banner-right-items">
             <div class="div-input"><input type="text" placeholder="Vyhledat zboží..." class="upper-banner-input"></div>
             <img class="loupe" src="../images/loupe.png" alt="">
-            <img src="../images/basket.png" class="margin-element-left" alt="" />
+            <a href="@Url.RouteUrl("ShoppingCart")"><img src="../images/basket.png" class="margin-element-left" alt="" /></a>
             <img src="../images/heart.svg" class="margin-element-left" alt="" />
         </div>
     </div>
