@@ -5,12 +5,18 @@ using Microsoft.AspNetCore.Hosting.Server;
 
 namespace BootShop.Controllers.Admin
 {
-    public class ProductPhotoController : Controller
+    public class ProductPhotoController : AdminBaseController
     {
         private BootShopContext context = new BootShopContext();
         [HttpGet]
         public IActionResult Index()
         {
+            RedirectToActionResult? checkloginResult = this.checkLogin();
+            if (checkloginResult != null)
+            {
+                return checkloginResult;
+            }
+
             ViewBag.ProductPhotos = this.context.ProductPhotos.Include(pp => pp.Product);
             ViewBag.Products = this.context.Products;
 
@@ -20,6 +26,12 @@ namespace BootShop.Controllers.Admin
         [HttpPost]
         public IActionResult Index(IFormFile image, int productId)
         {
+            RedirectToActionResult? checkloginResult = this.checkLogin();
+            if (checkloginResult != null)
+            {
+                return checkloginResult;
+            }
+
             string ImageName = image.FileName;
             string SavePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/productImages", ImageName);
 
@@ -46,6 +58,12 @@ namespace BootShop.Controllers.Admin
         [HttpGet]
         public IActionResult Delete(ProductPhoto productPhoto)
         {
+            RedirectToActionResult? checkloginResult = this.checkLogin();
+            if (checkloginResult != null)
+            {
+                return checkloginResult;
+            }
+
             productPhoto = this.context.ProductPhotos.Find(productPhoto.Id);
             
             string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/productImages", productPhoto.Filename);

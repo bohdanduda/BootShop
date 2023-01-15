@@ -4,13 +4,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BootShop.Controllers.Admin
 {
-    public class CategoryController : Controller
+    public class CategoryController : AdminBaseController
     {
         private BootShopContext context = new BootShopContext();
 
         [HttpGet]
         public IActionResult Index()
         {
+            RedirectToActionResult? checkloginResult = this.checkLogin();
+            if (checkloginResult != null)
+            {
+                return checkloginResult;
+            }
+
             ViewBag.Categories = this.context.Categories.Include(c => c.Subcategories); // https://learn.microsoft.com/en-us/ef/ef6/querying/related-data ;
 
             return View("/Views/Admin/Category.cshtml");
@@ -19,6 +25,12 @@ namespace BootShop.Controllers.Admin
         [HttpPost]
         public IActionResult Index(Category category)
         {
+            RedirectToActionResult? checkloginResult = this.checkLogin();
+            if (checkloginResult != null)
+            {
+                return checkloginResult;
+            }
+
             this.context.Categories.Add(category);
             this.context.SaveChanges();
             ViewBag.Categories = this.context.Categories.Include(c => c.Subcategories);
@@ -29,6 +41,12 @@ namespace BootShop.Controllers.Admin
         [HttpGet]
         public IActionResult Delete(Category category)
         {
+            RedirectToActionResult? checkloginResult = this.checkLogin();
+            if (checkloginResult != null)
+            {
+                return checkloginResult;
+            }
+
             List<Subcategory> subcategories = this.context.Subcategories.Where(s => s.CategoryId == category.Id).ToList();
             this.context.Subcategories.RemoveRange(subcategories);
             this.context.Categories.Remove(category);
@@ -40,6 +58,12 @@ namespace BootShop.Controllers.Admin
         [HttpGet]
         public IActionResult Edit(Category category)
         {
+            RedirectToActionResult? checkloginResult = this.checkLogin();
+            if (checkloginResult != null)
+            {
+                return checkloginResult;
+            }
+
             ViewBag.Category = this.context.Categories.Find(category.Id);
             ViewBag.SubCategories = this.context.Subcategories.Where(s => s.CategoryId == category.Id).ToList();
 
@@ -50,6 +74,12 @@ namespace BootShop.Controllers.Admin
         [ActionName("Edit")]
         public IActionResult EditPost(Category category)
         {
+            RedirectToActionResult? checkloginResult = this.checkLogin();
+            if (checkloginResult != null)
+            {
+                return checkloginResult;
+            }
+
             this.context.Categories.Update(category);
             this.context.SaveChanges();
 
