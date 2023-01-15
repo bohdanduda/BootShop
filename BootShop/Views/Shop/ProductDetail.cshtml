@@ -38,29 +38,40 @@
                 <div class="color">
                     <p class="color-size">Barva</p>
                     <div class="color-selection">
-                        <div class="color-select color-blue"></div>
-                        <div class="color-select color-black"></div>
-                        <div class="color-select color-red"></div>
-                        <div class="color-select color-blue selected-color"></div>
-                        <div class="color-select color-green"></div>
+                        @foreach (ProductVariant productVariant in ViewBag.DefaultProductVariantsForColors)
+                        {
+                            if (productVariant.ColorId == ViewBag.ProductVariant.ColorId)
+                            {
+                                <a href="@Url.RouteUrl("ProductDetail", new{id=productVariant.Id})"><div class="color-select" style="background:@productVariant.Color.HexCode; border: 3px solid red;"></div></a>
+                            }
+                            else
+                            {
+                                <a href="@Url.RouteUrl("ProductDetail", new{id=productVariant.Id})"><div class="color-select" style="background:@productVariant.Color.HexCode;"></div></a>
+                            }   
+                        }
                     </div>
                 </div>
 
                 <div class="size">
                     <p class="color-size">Velikost</p>
                     <div class="sizes">
-                        <p>21</p>
-                        <div class="out-of-stock"><p>22</p></div>
-                        <p>23</p>
-                        <div class="selected-size"><p>24</p></div>
-                        <p>25</p>
-                        <p>26</p>
-                        <p>27</p>
+                        @foreach (ProductVariant productVariant in ViewBag.DefaultProductVariantsForSizes)
+                        {
+
+                            if (productVariant.SizeId == ViewBag.ProductVariant.SizeId)
+                            {
+                                <a href="@Url.RouteUrl("ProductDetail", new{id=productVariant.Id})" style="color: red; font-weight: bold;">@productVariant.SizeId</a>
+                            }
+                            else
+                            {
+                                <a href="@Url.RouteUrl("ProductDetail", new{id=productVariant.Id})">@productVariant.SizeId</a>
+                            }
+                        }
                     </div>
                 </div>
             </div>
             <hr class="hr-splitter">
-            <p class="in-stock">@(ViewBag.ProductVariant.RemainingStock > 0 ? "Skladem":"Není skladem")</p>
+            <p class="in-stock">@(ViewBag.ProductVariant.RemainingStock > 0 ? "Skladem" : "Není skladem")</p>
             <p class="price-before-discount reset-margin">@ViewBag.ProductVariant.Price Kč</p>
             <div class="price-button-container">
                 <p class="product-price">@ViewBag.ProductVariant.PriceDiscount Kč</p>
