@@ -10,63 +10,37 @@ namespace BootShop.Controllers.Shop
     {
         private BootShopContext context = new BootShopContext();
 
-        public IActionResult Index(int? priceMin, int? priceMax, int? categoryId, string? orderBy, string? filterBy)
+        public IActionResult Index(int? priceMin, int? priceMax, int? categoryId, string? orderBy)
         {
             {
-                ViewBag.productVariants = this.context.ProductVariants.Include(v => v.Product);
-
-                //filtrace
-
-                if (filterBy == "price")
+                IQueryable<ProductVariant> productVariants = this.context.ProductVariants.Include(v => v.Product);
+                
+                if (priceMin != null)
                 {
-                    this.FilterByPrice(priceMin, priceMax);
-                }
-                else if (filterBy == "category")
-                {
-                    this.FilterByCategory(categoryId);
-                }
-                else if (filterBy == "both")
-                {
-                    this.FilterByBoth(priceMin, priceMax, categoryId);
+                    productVariants = productVariants.Where(pv => pv.PriceDiscount >= priceMin);
                 }
 
-                //řazení
+                if (priceMax != null)
+                {
+                    productVariants = productVariants.Where(pv => pv.PriceDiscount <= priceMax);
+                }
+
+                if (categoryId != null)
+                {
+                    productVariants = productVariants.Where(pv => pv.Product.CategoryId == categoryId);
+                }
 
                 if (orderBy == "price")
                 {
-                    this.OrderByPrice();
-                }
-                else if (orderBy == "name")
-                {
-                    this.OrderByName();
+                    productVariants = productVariants.OrderBy(pv => pv.PriceDiscount);
                 }
 
-                // řazení a filtrace
-                if (orderBy == "price" && orderBy == "price")
+                if (orderBy == "name")
                 {
-                    this.FilterByPriceOrderByPrice(priceMin, priceMax);
-                }
-                else if (orderBy == "price" && orderBy == "name")
-                {
-                    this.FilterByPriceOrderByName(priceMin, priceMax);
-                }
-                else if (filterBy == "category" && orderBy == "price")
-                {
-                    this.FilterByCategoryOrderByPrice(categoryId);
-                }
-                else if (filterBy == "category" && orderBy == "name")
-                {
-                    this.FilterByCategoryOrderByName(categoryId);
-                }
-                else if (filterBy == "both" && orderBy == "price")
-                {
-                    this.FilterByBothOrderByPrice(priceMin, priceMax, categoryId);
-                }
-                else if (filterBy == "both" && orderBy == "name")
-                {
-                    this.FilterByBothOrderByName(priceMin, priceMax, categoryId);
+                    productVariants = productVariants.OrderBy(pv => pv.Product.Name);
                 }
 
+                ViewBag.productVariants = productVariants;
                 ViewBag.PriceMax = context.ProductVariants.Max(v => v.PriceDiscount);
                 ViewBag.PriceMin = context.ProductVariants.Min(v => v.PriceDiscount);
                 ViewBag.Categories = this.context.Categories;
@@ -74,53 +48,6 @@ namespace BootShop.Controllers.Shop
 
                 return View("/Views/Shop/ProductList.cshtml");
             }
-        }
-        public void FilterByPrice(int? priceMin, int? priceMax)
-        {
-            ViewBag.ProductVariants = this.context.ProductVariants.Include(v => v.Product).Where(v => v.PriceDiscount >= priceMin && v.PriceDiscount <= priceMax);
-        }
-        public void FilterByCategory(int? categoryId)
-        {
-            ViewBag.ProductVariants = this.context.ProductVariants.Include(v => v.Product).Where(v => v.Product.CategoryId == categoryId);
-        }
-        public void FilterByBoth(int? priceMin, int? priceMax, int? categoryId)
-        {
-            ViewBag.ProductVariants = this.context.ProductVariants.Include(v => v.Product).Where(v => v.PriceDiscount >= priceMin && v.PriceDiscount <= priceMax && v.Product.CategoryId == categoryId);
-        }
-        public void OrderByPrice()
-        {
-            ViewBag.ProductVariants = this.context.ProductVariants.Include(v => v.Product).OrderBy(v => v.PriceDiscount);
-        }
-        public void OrderByName()
-        {
-            ViewBag.ProductVariants = this.context.ProductVariants.Include(v => v.Product).OrderBy(v => v.Product.Name);
-        }
-        public void FilterByPriceOrderByPrice(int? priceMin, int? priceMax)
-        {
-            ViewBag.ProductVariants = this.context.ProductVariants.Include(v => v.Product).Where(v => v.PriceDiscount >= priceMin && v.PriceDiscount <= priceMax).OrderBy(v => v.PriceDiscount);
-        }
-        public void FilterByPriceOrderByName(int? priceMin, int? priceMax)
-        {
-            ViewBag.ProductVariants = this.context.ProductVariants.Include(v => v.Product).Where(v => v.PriceDiscount >= priceMin && v.PriceDiscount <= priceMax).OrderBy(v => v.Product.Name);
-        }
-        public void FilterByCategoryOrderByPrice(int? categoryId)
-        {
-            ViewBag.ProductVariants = this.context.ProductVariants.Include(v => v.Product).Where(v => v.Product.CategoryId == categoryId).OrderBy(v => v.PriceDiscount);
-        }
-
-        public void FilterByCategoryOrderByName(int? categoryId)
-        {
-            ViewBag.ProductVariants = this.context.ProductVariants.Include(v => v.Product).Where(v => v.Product.CategoryId == categoryId).OrderBy(v => v.Product.Name);
-        }
-
-        public void FilterByBothOrderByPrice(int? priceMin, int? priceMax, int? categoryId)
-        {
-            ViewBag.ProductVariants = this.context.ProductVariants.Include(v => v.Product).Where(v => v.PriceDiscount >= priceMin && v.PriceDiscount <= priceMax && v.Product.CategoryId == categoryId).OrderBy(v => v.PriceDiscount);
-        }
-
-        public void FilterByBothOrderByName(int? priceMin, int? priceMax, int? categoryId)
-        {
-            ViewBag.ProductVariants = this.context.ProductVariants.Include(v => v.Product).Where(v => v.PriceDiscount >= priceMin && v.PriceDiscount <= priceMax && v.Product.CategoryId == categoryId).OrderBy(v => v.Product.Name);
         }
     }
 }
