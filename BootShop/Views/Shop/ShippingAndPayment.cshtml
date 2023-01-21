@@ -1,0 +1,80 @@
+﻿@using BootShop.Models;
+
+@{
+    Layout = "~/Views/Shop/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="../css/shipping_and_payment.css">
+
+div class="path">
+<a href="">Domů</a>
+<span>></span>
+<a href="">Košík</a>
+<span>></span>
+<a href="">Kontakt a Adresa</a>
+<span>></span>
+<a href="">Doprava a Platba</a>
+</div>
+
+<h2>Doprava</h2>
+
+<div class="contact-container">
+    <p class="contact-label">Kontakt:</p>
+    <p>lorem@ipsum.com</p>
+    <a href="">Změnit</a>
+</div>
+
+<div class="address-container">
+    <p class="address-label">Adresa:</p>
+    <p>Litoměřice, U Pěstíren, 420, Ústecký Kraj</p>
+    <a href="">Změnit</a>
+</div>
+
+<h3>Dopravní společnost</h3>
+
+<div class="shipping">
+    <div>
+        <label>
+            <input type="radio" name="shipping" value="n" checked>
+            PPL
+        </label>
+        <p>120 Kč</p>
+    </div>
+    <div>
+        <label>
+            <input type="radio" name="shipping" value="n" checked>
+            Zásilkovna
+        </label>
+        <p>59 Kč</p>
+    </div>
+    <div>
+        <label>
+            <input type="radio" name="shipping" value="n" checked>
+            Česká pošta
+        </label>
+        <p>420 Kč</p>
+    </div>
+</div>
+
+<h2>Platba</h2>
+
+<div class="payment">
+    <div>
+        <label>
+            <input type="radio" name="payment" value="n" checked>
+            Dobírka
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="radio" name="payment" value="n" checked>
+            Online-Převod
+        </label>
+    </div>
+</div>
+
+
+<div class="return-continue">
+    <a class="return-to-information" href="@Url.RouteUrl("CustomerInfo")">< Vrátit se k informacím</a>
+    <button>Dokončit objednávku</button>
+</div>

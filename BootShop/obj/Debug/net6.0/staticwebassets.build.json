@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JEru7f0t/uxuNfj6cRk0ZJB30QJoyPbRkqpR3c6tUa0=",
+  "Hash": "QeWy/wy4n6ZBw/VIMP7vkCEHhZXx1gnZ+vjPj00x5ds=",
   "Source": "BootShop",
   "BasePath": "_content/BootShop",
   "Mode": "Default",
@@ -306,6 +306,23 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-3.4.1-dist\\js\\npm.js"
     },
     {
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\css\\customer_info.css",
+      "SourceId": "BootShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
+      "BasePath": "_content/BootShop",
+      "RelativePath": "css/customer_info.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\customer_info.css"
+    },
+    {
       "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\css\\product_style.css",
       "SourceId": "BootShop",
       "SourceType": "Discovered",
@@ -321,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\product_style.css"
+    },
+    {
+      "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\css\\shipping_and_payment.css",
+      "SourceId": "BootShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\",
+      "BasePath": "_content/BootShop",
+      "RelativePath": "css/shipping_and_payment.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\shipping_and_payment.css"
     },
     {
       "Identity": "C:\\Users\\dudab\\Desktop\\SKOLA\\VISUALY\\$ASP\\BootShop\\BootShop\\wwwroot\\css\\style.css",

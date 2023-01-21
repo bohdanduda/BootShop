@@ -40,8 +40,9 @@
 </div>
 
 <div class="under-cart-buttons">
-    <button><p><a href="@Url.RouteUrl("ProductList")">Pokračovat v nakupování</a></p></button>
-    <button><p><a href="@Url.RouteUrl("ShoppingCartClear")">Vyprázdnit košík</a></p></button>
+    <p><a href="@Url.RouteUrl("ShoppingCartClear")"><button>Vyprázdnit košík</button></a></p>
+    <p><a href="@Url.RouteUrl("ProductList")"><button>Pokračovat v nakupování</button></a></p>
+    <p><a href="@Url.RouteUrl("CustomerInfo")"><button>Přejít k dopravě</button></br>a platbě</a></p>
 </div>
 
 <style>
@@ -152,12 +153,8 @@
             border: 1px solid #b6bed5;
             height: 50px;
             margin-left: 20px;
+            font-weight: bold;
         }
-
-            .under-cart-buttons button p {
-                margin: 10px;
-                font-weight: bold;
-            }
 
     .end-price {
         width: 100%;

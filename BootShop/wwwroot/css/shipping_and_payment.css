@@ -1,0 +1,398 @@
+body {
+    font-family: "Libre Franklin";
+    margin: 0;
+    min-width: 1500px;
+}
+
+header {
+    display: flex;
+    background: #314069;
+    height: 50px;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+}
+
+    .contact a {
+        color: white;
+        text-decoration: none;
+    }
+
+.mobile-resolution-contact {
+    display: none;
+}
+
+header a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+    header a:hover {
+        color: lightgray;
+    }
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 120px;
+}
+
+    .login img {
+        margin-top: 5px;
+    }
+
+    .login :hover {
+        color: lightgray;
+    }
+
+.upper-banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 20px 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.loupe {
+    display: none;
+}
+
+.upper-banner-right-items {
+    display: flex;
+    align-items: center;
+}
+
+.div-input {
+    border: 1px solid #b6bed5;
+    height: 42px;
+}
+
+.upper-banner-input {
+    margin: 5px;
+    padding-left: 40px;
+    width: 210px;
+    height: 30px;
+    background: url("css_zadani_BOTY/img/loupe.svg") no-repeat left;
+    border: none;
+    outline: none;
+}
+
+    .upper-banner-input::placeholder {
+        color: #b4bed5;
+        font-size: 16px;
+    }
+
+.category-select {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 26px 120px 23px 120px;
+}
+
+    .category-select div {
+        display: flex;
+        justify-content: center;
+        color: #b6bed5;
+        text-align: center;
+        height: 68px;
+        min-width: 100px;
+    }
+
+.category-select-border {
+    border: 1px solid #b6bed5;
+}
+
+.category-select-border-left {
+    border-top: 1px solid #b6bed5;
+    border-left: 1px solid #b6bed5;
+    border-bottom: 1px solid #b6bed5;
+}
+
+.category-select-border-right {
+    border-top: 1px solid #b6bed5;
+    border-right: 1px solid #b6bed5;
+    border-bottom: 1px solid #b6bed5;
+}
+
+.category-select p {
+    align-self: center;
+}
+
+.category-select :hover {
+    border: 1px solid #c7232e;
+    color: #c7232e;
+    font-weight: bold;
+}
+
+.category-select p {
+    pointer-events: none;
+}
+
+.category-select img {
+    pointer-events: none;
+    align-self: center;
+}
+
+.category-select-container img {
+    margin: 18px 0 18px 5px
+}
+
+.path {
+    display: flex;
+    margin: 25px 120px 30px 115px;
+}
+
+    .path span {
+        color: #c7232e;
+    }
+
+    .path a {
+        color: #c7232e;
+        text-decoration: none;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+        .path a:hover {
+            color: #314069;
+            text-decoration: underline;
+        }
+
+h2 {
+    color: #314069;
+    text-align: left;
+    margin-left: 120px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #b6bed5;
+    width: 570px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+}
+
+    .contact-container a {
+        margin-left: 240px;
+        color: #314069;
+    }
+
+.contact-label {
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.address-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #b6bed5;
+    width: 570px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+}
+
+    .address-container a {
+        margin-left: 80px;
+        color: #314069;
+    }
+
+.address-label {
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+h3 {
+    margin-left: 120px;
+    color: #314069;
+}
+
+.shipping {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    margin-left: 120px;
+}
+
+    .shipping div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #b6bed5;
+        width: 220px;
+        margin-bottom: 5px;
+    }
+
+        .shipping div label {
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+
+        .shipping div p {
+            margin-right: 10px;
+        }
+
+.payment {
+    margin-left: 120px;
+    margin-bottom: 30px;
+}
+
+    .payment div {
+        display: flex;
+        align-items: center;
+        border: 1px solid #b6bed5;
+        width: 150px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+
+.return-continue button {
+    height: 50px;
+    width: 160px;
+    background: #c7232e;
+    color: white;
+    border: 1px solid #b6bed5;
+    font-weight: bold;
+}
+
+.return-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 508px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+}
+
+.return-to-information {
+    text-decoration: none;
+    color: #c7232e;
+    font-weight: bold;
+}
+
+footer {
+    background: #c7232e;
+    display: flex;
+    bottom: 0;
+}
+
+.footer-about-us {
+    color: white;
+    padding-top: 30px;
+    width: 70%;
+    margin-left: 120px;
+}
+
+.footer-whole {
+    display: flex;
+}
+
+.footer-lorem-container {
+    width: 50%;
+}
+
+.about-us {
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+.footer-list-container {
+    width: 50%;
+    margin-left: 130px;
+}
+
+.footer-our-stock {
+    margin-left: 40px;
+}
+
+.stock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+    .stock li {
+        list-style-type: circle;
+    }
+
+.footer-ul {
+    width: 100px;
+}
+
+.boty-image {
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+}
+
+.footer-contact {
+    background: #314069;
+    color: white;
+    width: 30%;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.contact-us {
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+}
+
+    .social img {
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+.margin-element-left {
+    margin-left: 10px
+}
+
+.margin-element-top {
+    margin-top: 10px;
+}
+
+.divider {
+    background: url("css_zadani_BOTY/img/Group 295.png") no-repeat center;
+    display: block;
+    height: 37px;
+    border: 0;
+    position: relative;
+    margin: 36px 120px 36px 120px;
+}
+
+    .divider:before,
+    .divider:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: #d7d7d7;
+        height: 2px;
+        top: 19px;
+    }
+
+    .divider:before {
+        left: 0;
+        right: 50%;
+        margin-right: 30px;
+    }
+
+    .divider:after {
+        right: 0;
+        left: 50%;
+        margin-left: 30px;
+    }
+
+.change-svg-color {
+    filter: brightness(0) invert(1);
+}

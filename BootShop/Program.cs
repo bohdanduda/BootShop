@@ -100,6 +100,26 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
+    name: "CustomerInfo",
+    pattern: "/kontaktniInformace",
+    defaults: new
+    {
+        Controller = "CustomerInfo",
+        Action = "Index"
+    }
+    );
+
+app.MapControllerRoute(
+    name: "ShippingAndPayment",
+    pattern: "/doprava-platba",
+    defaults: new
+    {
+        Controller = "ShippingAndPayment",
+        Action = "Index"
+    }
+    );
+
+app.MapControllerRoute(
     name: "AdminHome",
     pattern: "/admin",
     defaults: new

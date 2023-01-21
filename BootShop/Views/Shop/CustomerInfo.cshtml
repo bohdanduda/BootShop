@@ -1,0 +1,88 @@
+﻿@using BootShop.Models;
+
+@{
+    Layout = "~/Views/Shop/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="../css/customer_info.css">
+
+<div class="path">
+    <a href="">Domů</a>
+    <span>></span>
+    <a href="">Košík</a>
+    <span>></span>
+    <a href="">Kontakt a Adresa</a>
+</div>
+
+<h2>Kontaktní Informace</h2>
+<div>
+    <label>
+        <input class="contact-input" type="text" placeholder="Email nebo telefonní číslo...">
+    </label>
+</div>
+
+<div class="register-newsletter">
+    <label>
+        <input type="checkbox" name="agree" value="1">
+        Chci dostávat upozornění o akcích a slevách
+    </label>
+</div>
+
+<h2>Adresa</h2>
+
+<div>
+    <label>
+        <input class="name-input" type="text" placeholder="Jméno...">
+    </label>
+
+    <label>
+        <input class="surname-input" type="text" placeholder="Příjmení...">
+    </label>
+</div>
+
+<div>
+    <label>
+        <input class="contact-input" type="text" placeholder="Adresa...">
+    </label>
+</div>
+
+<div>
+    <label>
+        <input class="contact-input" type="text" placeholder="Město...">
+    </label>
+</div>
+
+<div class="district-postal">
+    <div class="district-select">
+        <label>
+            <select name="" id="" required>
+                <option value="">-- vyber kraj --</option>
+                <optgroup label="Kraj">
+                    <option value="1">Hlavní město Praha</option>
+                    <option value="2">Středočeský kraj</option>
+                    <option value="3">Jihočeský kraj</option>
+                    <option value="4">Plzeňský kraj</option>
+                    <option value="5">Karlovarský kraj</option>
+                    <option value="6" selected>Ústecký kraj</option>
+                    <option value="7">Liberecký kraj</option>
+                    <option value="8">Královéhraceký kraj</option>
+                    <option value="9">Pardubický Kraj</option>
+                    <option value="10">Kraj Vysočina</option>
+                    <option value="11">Jihomoravský Kraj</option>
+                    <option value="12">Zlínský Kraj</option>
+                    <option value="13">Holomócký kraj</option>
+                    <option value="14">Moravskoslezký kraj</option>
+                </optgroup>
+            </select>
+        </label>
+    </div>
+
+    <label>
+        <input class="postal-input" type="text" placeholder="PSČ...">
+    </label>
+</div>
+
+<div class="return-continue">
+    <a style="color: #c7232e; font-weight: bold;" class="return-to-cart" href="@Url.RouteUrl("ShoppingCart")">< Vrátit se do košíku</a>
+    <p><a style="color: white;" href="@Url.RouteUrl("ShippingAndPayment")"><button>Pokračovat</button></a></p>
+</div>

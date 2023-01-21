@@ -75,6 +75,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3ViY2F0ZWdvcnlFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Shop/CustomerInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxDdXN0b21lckluZm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Shop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -89,6 +93,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Shop/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Shop/ShippingAndPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxTaGlwcGluZ0FuZFBheW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dudab/Desktop/SKOLA/VISUALY/$ASP/BootShop/BootShop/Views/Shop/ShoppingCart.cshtml]
