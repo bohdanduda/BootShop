@@ -6,6 +6,9 @@ namespace BootShop.Controllers.Shop
     {
         public IActionResult Index()
         {
+            ViewBag.contact = this.HttpContext.Session.GetString("customerContact");
+            ViewBag.address = this.HttpContext.Session.GetString("customerAddress");
+
             return View("/Views/Shop/ShippingAndPayment.cshtml");
         }
     }

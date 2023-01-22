@@ -7,26 +7,26 @@
 <link rel="stylesheet" href="../css/shipping_and_payment.css">
 
 <div class="path">
-<a href="">Domů</a>
-<span>></span>
-<a href="">Košík</a>
-<span>></span>
-<a href="">Kontakt a Adresa</a>
-<span>></span>
-<a href="">Doprava a Platba</a>
+    <a href="@Url.RouteUrl("Home")">Domů</a>
+    <span>></span>
+    <a href="@Url.RouteUrl("ShoppingCart")">Košík</a>
+    <span>></span>
+    <a href="@Url.RouteUrl("CustomerInfo")">Kontakt a Adresa</a>
+    <span>></span>
+    <a href="@Url.RouteUrl("ShippingAndPayment")">Doprava a Platba</a>
 </div>
 
 <h2>Doprava</h2>
 
 <div class="contact-container">
     <p class="contact-label">Kontakt:</p>
-    <p></p>
+    <p>@ViewBag.contact</p>
     <a href="@Url.RouteUrl("CustomerInfo")">Změnit</a>
 </div>
 
 <div class="address-container">
     <p class="address-label">Adresa:</p>
-    <p></p>
+    <p><p>@ViewBag.address</p></p>
     <a href="@Url.RouteUrl("CustomerInfo")">Změnit</a>
 </div>
 

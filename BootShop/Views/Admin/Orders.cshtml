@@ -1,0 +1,32 @@
+﻿@using BootShop.Models;
+
+@{
+    Layout = "/Views/Admin/Shared/_Layout.cshtml";
+}
+
+<h2>Objednávky</h2>
+<div class="order-container">
+    <p>Id objednávky</p>
+    <p>Id zákazníka</p>
+    <p>Čas vytvoření</p>
+    <p>Cena</p>
+    <p>Způsob doručení</p>
+    <p>Způsob platby</p>
+    <p>Poznámka</p>
+</div>
+
+<style>
+    body{
+        margin: 30px 100px 0 100px;
+    }
+    .order-container{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+        background: #eaeaea;
+    }
+    .order-container p{
+        padding: 5px;
+        padding-bottom: 0;
+    }
+</style>

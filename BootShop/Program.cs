@@ -320,6 +320,16 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
+    name: "Orders",
+    pattern: "/admin/orders",
+    defaults: new
+    {
+        Controller = "Orders",
+        Action = "Index"
+    }
+    );
+
+app.MapControllerRoute(
     name: "AdminLogin",
     pattern: "/admin/login",
     defaults: new

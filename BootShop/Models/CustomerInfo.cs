@@ -13,17 +13,26 @@ namespace BootShop.Models
         public string Name { get; set; }
         [Column("customer_surname")]
         public string Surname { get; set; }
+        [Column("customer_address")]
+        public string Address { get; set; }
         [Column("customer_town")]
         public string Town { get; set; }
-        [Column("customer_street")]
-        public string Street{ get; set; }
-        [Column("customer_house_number")]
-        public int HouseNumber { get; set; }
         [Column("customer_zipcode")]
-        public int Zipcode { get; set; }
+        public string Zipcode { get; set; }
         [Column("customer_phone")]
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         [Column("customer_email")]
         public string Email { get; set; }
+
+        public CustomerInfo(string name, string surname, string address, string town, string zipcode, string phone, string email)
+        {
+            this.Name = name;
+            this.Surname = surname;
+            this.Address = address;
+            this.Town = town;
+            this.Zipcode = zipcode;
+            this.Phone = phone;
+            this.Email = email;
+        }
     }
 }
