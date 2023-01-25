@@ -120,6 +120,16 @@ app.MapControllerRoute(
     );
 
 app.MapControllerRoute(
+    name: "OrderComplete",
+    pattern: "/objednavka-dokoncena",
+    defaults: new
+    {
+        Controller = "OrderComplete",
+        Action = "Index"
+    }
+    );
+
+app.MapControllerRoute(
     name: "AdminHome",
     pattern: "/admin",
     defaults: new
@@ -324,7 +334,7 @@ app.MapControllerRoute(
     pattern: "/admin/orders",
     defaults: new
     {
-        Controller = "Orders",
+        Controller = "Order",
         Action = "Index"
     }
     );

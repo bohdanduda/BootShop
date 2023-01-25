@@ -3,7 +3,7 @@
 namespace BootShop.Models
 {
     [Table("customer")]
-    public class CustomerInfo
+    public class Customer
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
@@ -24,7 +24,7 @@ namespace BootShop.Models
         [Column("customer_email")]
         public string Email { get; set; }
 
-        public CustomerInfo(string name, string surname, string address, string town, string zipcode, string phone, string email)
+        public Customer(string name, string surname, string address, string town, string zipcode, string phone, string email)
         {
             this.Name = name;
             this.Surname = surname;

@@ -18,8 +18,8 @@
 <form method="post">
 <div>
     <label style="display: flex; flex-direction: column;">
-        <input required class="contact-input" type="text" name="email" placeholder="Email..." value="@ViewBag.contact">
-        <input required class="contact-input" type="text" name="phone" placeholder="Telefonní číslo..." value="@ViewBag.contact">
+        <input required class="contact-input" type="text" name="email" placeholder="Email..." value="@ViewBag.email">
+        <input required class="contact-input" type="text" name="phone" placeholder="Telefonní číslo..." value="@ViewBag.phone">
     </label>
 </div>
 
@@ -79,14 +79,13 @@
         </div>
 
         <label>
-            <input required class="postal-input" type="text" name="postalCode" placeholder="PSČ..." value="@ViewBag.postalCode">
+            <input required class="postal-input" type="text" name="postalCode" placeholder="PSČ..." value="@ViewBag.zipCode">
         </label>
     </div>
 
     <div class="return-continue">
         <a class="return-to-cart" href="@Url.RouteUrl("ShoppingCart")">< Vrátit se do košíku</a>
-
-        <a href="@Url.RouteUrl("ShippingAndPayment")">Debílek nefunkční</a>
+        
         <input type="submit" value="Pokračovat" class="continue-input"></input>
     </div>
 </form>

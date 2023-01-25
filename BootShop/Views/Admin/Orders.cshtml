@@ -4,29 +4,54 @@
     Layout = "/Views/Admin/Shared/_Layout.cshtml";
 }
 
-<h2>Objednávky</h2>
-<div class="order-container">
-    <p>Id objednávky</p>
-    <p>Id zákazníka</p>
-    <p>Čas vytvoření</p>
-    <p>Cena</p>
-    <p>Způsob doručení</p>
-    <p>Způsob platby</p>
-    <p>Poznámka</p>
-</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Objednávky</h1>
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>ID objednávky</th>
+                    <th>Čas vytvoření</th>
+                    <th>Jméno</th>
+                    <th>Příjmení</th>
+                    <th>Adresa</th>
+                    <th>Cena</th>
+                    <th>Způsob doručení</th>
+                    <th>Způsob platby</th>
+                    <th>Položky</th>
+                </tr>
+                @{
+                    foreach (Order order in ViewBag.Orders)
+                    {
+                        <tr>
+                            <td>@order.Id</td>
+                            <td>@order.CreatedAt</td>
+                            <td>@order.Customer.Name</td>
+                            <td>@order.Customer.Surname</td>
+                            <td>@order.Customer.Address, @order.Customer.Zipcode @order.Customer.Town</td>
+                            <td>@order.TotalPrice</td>
+                            <td>@order.DeliveryMethod.Name</td>
+                            <td>@order.PaymentMethod.Name</td>
+                            <td>
+                                <ul>
+                                    @foreach (OrderItem orderItem in ViewBag.OrderItems)
+                                    {
+                                        if (orderItem.OrderId == order.Id)
+                                        {
+                                            <li>
+                                                <span>@orderItem.ProductVariant.Product.Name,</span>
+                                                <span>@orderItem.Quantity ks,</span>
+                                                <span>barva: @orderItem.ProductVariant.Color.Name,</span>
+                                                <span>vel.: @orderItem.ProductVariant.SizeId</span>
+                                            </li>
+                                        }
+                                    }
+                                </ul>
+                            </td>
+                        </tr>
+                    }
+                }
 
-<style>
-    body{
-        margin: 30px 100px 0 100px;
-    }
-    .order-container{
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 2px solid black;
-        background: #eaeaea;
-    }
-    .order-container p{
-        padding: 5px;
-        padding-bottom: 0;
-    }
-</style>
+            </table>
+        </div>
+    </div>
